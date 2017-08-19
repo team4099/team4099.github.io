@@ -1,0 +1,52 @@
+---
+---
+
+@import "variables";
+@import "bootstrap/bootstrap";
+
+body, html {
+    height: 100%;
+    color: #333;
+    text-shadow: none;
+}
+.site-wrapper { 
+    /* The image used */
+    background-color: #f8f9fa ;
+
+    /* Full height */
+    height: 100%; 
+    width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+}
+
+.navbar .nav > li > a {
+  line-height: 100px;
+}
+
+.navbar {
+    color: #f8f9fa;
+}
+
+.mastfoot {
+    position: static;
+    bottom: 0;
+    color: #212529;
+  }
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: bold;
+  color: #212529;
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+  color: #E4B94F
+}

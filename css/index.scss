@@ -1,9 +1,13 @@
 ---
 ---
+
+@import "variables";
+@import "bootstrap/bootstrap";
+
 body, html {
     height: 100%;
 }
-.site-wrapper { 
+body { 
     /* The image used */
     background-image: 
     linear-gradient(
@@ -19,16 +23,4 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.navbar .nav > li > a {
-  line-height: 100px;
-}
-
-.nav-masthead .nav-link {
-  padding: .25rem 0;
-  font-weight: bold;
-  color: rgba(255,255,255,1);
-  background-color: transparent;
-  border-bottom: .25rem solid transparent;
 }

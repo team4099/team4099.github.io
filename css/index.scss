@@ -30,9 +30,14 @@ body, html {
   line-height: 30px;
 }
 
+.navbar {
+  height: 10%;
+}
+
 .navbar .nav {
   padding: .25rem 0;
   font-weight: bold;
+  font-size: 20px;
   color: $white;
   background-color: transparent;
   border-bottom: .25rem solid transparent;
@@ -41,9 +46,15 @@ body, html {
 #mainButton {
   background-color: $teamColor;
   border: 0px;
-  color: $black;
+  color: $gray-700;
 }
 
 .nav-link {
   color: $white !important;
+}
+
+.center-fix {
+  position: relative;
+  margin-top: 2.25%;
+  margin-left: 40%;
 }

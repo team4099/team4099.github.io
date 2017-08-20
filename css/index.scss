@@ -53,11 +53,6 @@ body, html {
   
 }
 
-.nav-link {
-  color: $white !important;
-
-}
-
 .nav-item {
   margin-left: 10px;
   margin-right: 10px;
@@ -65,8 +60,4 @@ body, html {
 
 .center-fix {
   position: relative;
-}
-
-.navbar-logo {
-  height: $navbar-logo-height;
 }

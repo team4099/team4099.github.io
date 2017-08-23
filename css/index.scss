@@ -11,6 +11,8 @@ body, html {
 // Override Bootstrap underlining for anchors
 a:hover {
     color: #0056b3;
+    text-decoration: initial;
+    text-decoration-line: initial;
 }
 
 // For setting cover background

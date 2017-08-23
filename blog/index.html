@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Blog
-permalink: /blog
 ---
 <style>
     /*
@@ -13,18 +12,7 @@ permalink: /blog
         color: #555;
     }
 
-    h1,
-    .h1,
-    h2,
-    .h2,
-    h3,
-    .h3,
-    h4,
-    .h4,
-    h5,
-    .h5,
-    h6,
-    .h6 {
+    h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
         margin-top: 0;
         font-weight: normal;
         color: #333;
@@ -127,19 +115,7 @@ permalink: /blog
     .sidebar-module-inset ol:last-child {
         margin-bottom: 0;
     }
-    /* Pagination */
 
-    .pager {
-        margin-bottom: 60px;
-        text-align: left;
-    }
-
-    .pager>li>a {
-        width: 140px;
-        padding: 10px 20px;
-        text-align: center;
-        border-radius: 30px;
-    }
     /*
  * Blog posts
  */
@@ -182,22 +158,51 @@ permalink: /blog
 <div class="row">
 
     <div class="col-sm-8 blog-main">
-        {% for post in site.posts %}
+        {% for post in paginator.posts %}
             {% if post.categories contains 'blog' %}
             <div class="blog-post">
-                <h2 class="blog-post-title"><a>{{ post.title }}</a></h2>
+                <h2 class="blog-post-title">{{ post.title }}</h2>
                 <p class="blog-post-meta">{{ post.date }} by {{ post.author }}</p>
-    
-                <p>{{ post.excerpt }}</p>
+                {{ post.content}}
             </div>
             <!-- /.blog-post -->
             {% endif %}
         {% endfor %}
 
-        <nav>
-            <ul class="pager">
-                <li><a href="#">Previous</a></li>
-                <li><a href="#">Next</a></li>
+        
+        <nav aria-label="...">
+            <ul class="pagination justify-content-center">
+                {% if paginator.previous_page %}
+                    <li class="page-item">
+                        <a class="page-link" href="{{ paginator.previous_page_path }}">Previous</a>
+                    </li>
+                {% else %}
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                {% endif %}
+
+                {% for page in (1..paginator.total_pages) %}
+                    {% if page == paginator.page %}
+                        <li class="page-item active">
+                            <a class="page-link" href="#">{{ page }} <span class="sr-only">(current)</span></a>
+                        </li>
+                    {% elsif page == 1 %}
+                        <li class="page-item"><a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+                    {% else %}
+                        <li class="page-item"><a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+                    {% endif %}
+                {% endfor %}
+
+                {% if paginator.next_page %}
+                    <li class="page-item">
+                        <a class="page-link" href="{{ paginator.next_page_path }}">Next</a>
+                    </li>
+                {% else %}
+                <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Next</a>
+                    </li>
+                {% endif %}
             </ul>
         </nav>
 

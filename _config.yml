@@ -28,6 +28,11 @@ instagram_username: phsfirstrobotics
 # Build settings
 markdown: kramdown
 # theme: minima
+permalink: pretty
+
+paginate: 10
+paginate_path: "/blog/:num/"
+
 plugins:
   - jekyll-feed
 

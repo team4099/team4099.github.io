@@ -8,6 +8,11 @@ body, html {
     height: 100%;
 }
 
+// Override Bootstrap underlining for anchors
+a:hover {
+    color: #0056b3;
+}
+
 // For setting cover background
 .site-wrapper { 
     /* The image used */

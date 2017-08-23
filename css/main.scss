@@ -4,4 +4,14 @@
 @import "variables";
 @import "bootstrap/bootstrap";
 
-
+.btn-outline-team {
+    color:  $team-gold !important;
+    border-color: $team-gold !important;
+    background-color: transparent;
+    background-image: none;
+  }
+  .btn-outline-team:hover {
+    color: $white !important;
+    background-color:  $team-gold !important;
+    border-color:  $team-gold !important;
+  }

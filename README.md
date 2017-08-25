@@ -43,3 +43,29 @@ This should get a local copy of the repository downloaded. Then, open the RubyIn
 Use the above crarh course to get to the directory that you `clone`d the website repository to. Then, run `bundle install`. Note that this command only has to be run the first time you are doing this.
 
 Finally, run `bundle exec jekyll serve`. This will run Jekyll and allow you to view the website locally by going to `localhost:4000` in your browser. Note that sometimes, Jekyll takes a few seconds to update with changes you make. Also, sometimes, Chrome will not load in new changes. If this happens, press `F12` and then right click the refresh button, and select `Empty Cache and Hard Reload`. 
+
+## Editing Pages and Creating Posts
+
+Blog posts go in tne `_posts` directory, while learning pages go in the `_learn` directory. Both of these types of pages are written in Markdown, a guide for which can be found [here](https://guides.github.com/features/mastering-markdown/). 
+
+All blog posts must begin with what Jekyll calls "front matter", which is data that gives Jekyll some information about your page:
+```liquid
+---
+layout: post
+title:  <title>
+date:   yyyy-mm-dd hh:MM:ss -0500
+categories: blog
+author: <your name>
+---
+```
+The blog post file names need to be as follows: `yyyy-mm-dd-<title>.md`, and the title in the filename must have spaces replaced by underscores. 
+
+The learn pages need less front matter:
+```liquid
+---
+title: <title>
+categories: business
+---
+```
+
+Their filenames should make it so that alphabetical order for the files is the correct display order on the page. 

@@ -40,6 +40,11 @@ collections:
     defaults:
       - values:
         layout: learn
+  robots:
+    output: true
+    defaults:
+      - values:
+        layout: robots
 
 plugins:
   - jekyll-feed

@@ -117,14 +117,12 @@ title: Blog
 
     <div class="col-sm-8 blog-main">
         {% for post in paginator.posts %}
-            {% if post.categories contains 'blog' %}
             <div class="blog-post">
                 <h2 class="blog-post-title">{{ post.title }}</h2>
                 <p class="blog-post-meta">{{ post.date }} by {{ post.author }}</p>
                 {{ post.content}}
             </div>
             <!-- /.blog-post -->
-            {% endif %}
         {% endfor %}
 
         

@@ -7,7 +7,7 @@
         <meta name="author" content="">
         <link rel="icon" href="/img/favicon.ico">
     
-        <title>{{ page.title }} - Team 4099</title>
+        <title>{{ page.title }} - Learn - Team 4099</title>
     
         <!-- Custom styles for this template -->
         {% include topImports.html %}
@@ -22,7 +22,19 @@
                 <br><br><br><br><br>
                 <div class="row">
                     <div class="col">
+                        <h1>{{ page.title }}</h1>
                         {{ content }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <ul>
+                            {% for learn_page in site.learn %}
+                                {% if learn_page.categories contains page.subteam %}
+                                    <li><a href="{{ learn_page.url }}">{{ learn_page.title }}</a></li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
                     </div>
                 </div>
                 <br>

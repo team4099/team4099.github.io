@@ -1,0 +1,53 @@
+<html lang="en">
+        
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="/img/favicon.ico">
+    
+        <title>{{ page.title }} - Team 4099</title>
+    
+        <!-- Custom styles for this template -->
+        {% include topImports.html %}
+    </head>
+    
+    <body>
+        <header>
+            {% include navbar.html %}
+        </header>
+        <div class="container">
+            <!-- <div class="container"> -->    
+                <br><br><br><br><br>
+            <style type="text/css">
+                .robot-image {
+                    width: 100%;
+                }
+            </style>
+            
+            <h2>{{ page.title }}</h2>
+            <br>
+            {% for robot_page in site.robots %}            
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h3>{{ robot_page.title }}</h3>
+                        <hr>
+                        <p>{{ robot_page.excerpt }}</p>
+                        <a href="{{ robot_page.url }}" class="btn btn-info float-md-right">Read more</a>
+                        
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <h3>&nbsp;</h3>
+                        <img class="robot-image" src="{{ robot_page.image_url }}" alt="{{ robot_page.year }} Robot">
+                    </div>
+                </div>
+            {% endfor %}
+            <br>
+        </div>
+    
+        {% include bottomImports.html %}
+    
+    </body>
+        
+</html>

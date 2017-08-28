@@ -2,6 +2,7 @@
 ---
 @import "variables";
 @import "bootstrap/bootstrap";
+
 .btn-outline-team {
   color: $team-gold !important;
   border-color: $team-gold !important;
@@ -37,4 +38,22 @@
 
 .support-sponsor {
   color: $support-sponsor !important;
+}
+
+.label{
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: 12px;
+  line-height: 14px;
+  color: $white;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: $gray-200;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px
+}
+
+.label-team {
+  background-color: $team-gold !important;
 }

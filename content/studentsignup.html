@@ -24,7 +24,7 @@ permalink: /studentsignup/
 <br>
 <h5>Sign Up Form</h5>
 
-<form class="ccf-form ccf-theme-default" action="https://getsimpleform.com/messages?form_api_token=b804d32502eae44dfbe00e79c53766f7" method="post" data-form-id="8732">
+<form class="ccf-form ccf-theme-default" action="https://getsimpleform.com/messages?form_api_token=b804d32502eae44dfbe00e79c53766f7" method="post">
     <label>Student Name</label>
     <div data-field-type="name" data-field-slug="name-1" class="row" id="wrap">
         <div class="left_col">
@@ -101,17 +101,24 @@ permalink: /studentsignup/
     <br>
     <div class="form-check form-check-inline">
         <label class="form-check-label">
-            <input class="form-check-input" type="radio" name="pay" id="inlineRadio1" value="paynow"> Pay now
+            <input class="form-check-input" type="radio" name="pay" id="pn" value="paynow" selected> Pay now
         </label>
     </div>
     <div class="form-check form-check-inline">
         <label class="form-check-label">
-            <input class="form-check-input" type="radio" name="pay" id="inlineRadio2" value="paylater"> Pay later (we will contact you to make sure that you complete your registration!)
+            <input class="form-check-input" type="radio" name="pay" id="pl" value="paylater"> Pay later (we will contact you to make sure that you complete your registration!)
         </label>
     </div>
     <br>
     <div class="form-submit">
         <button type="submit" class="btn btn-primary">Sign me up!</button>
+        <script>
+            if(document.getElementById('pn').checked) {
+            //Male radio button is checked
+            }else if(document.getElementById('pl').checked) {
+            //Female radio button is checked
+            }
+        </script>
     </div>
 
 </form>

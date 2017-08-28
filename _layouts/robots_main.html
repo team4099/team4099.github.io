@@ -11,21 +11,18 @@
     
         <!-- Custom styles for this template -->
         {% include topImports.html %}
+        <style type="text/css">
+            .robot-image {
+                width: 100%;
+            }
+        </style>
     </head>
     
     <body>
         <header>
             {% include navbar.html %}
         </header>
-        <div class="container">
-            <!-- <div class="container"> -->    
-                <br><br><br><br>
-            <style type="text/css">
-                .robot-image {
-                    width: 100%;
-                }
-            </style>
-            
+        <div class="container">          
             <h2>{{ page.title }}</h2>
             <br>
             {% for robot_page in site.robots %}            

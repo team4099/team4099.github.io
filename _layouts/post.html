@@ -18,17 +18,21 @@
                 {% include navbar.html %}
             </header>
             <div class="container">
-                <!-- <div class="container"> -->    
-                    <br><br><br>
-                    <div class="row">
-                        <div class="col">
-                            {{ content }}
-                        </div>
+                <div class="row">
+                    <div class="col">
+                        {{ content }}
                     </div>
-                    <br>
-                <!-- </div> -->
+                </div>
+                <br>
+            </div>
         
-                {% include bottomImports.html %}
+            <footer class="footer">
+                <div class="container">
+                    <span class="text-muted">{% include footerContents.html %}</span>
+                </div>
+            </footer>
+
+            {% include bottomImports.html %}
         
         </body>
         

@@ -57,7 +57,10 @@
 .label-team {
   background-color: $team-gold !important;
 }
-
+.btn-info{
+  background-color: $team-gold !important;
+  border-color: $team-gold !important;
+}
 body { padding-top: 80px; }
 // @media screen and (max-width: 768px) {
 //     body { padding-top: 0px; }

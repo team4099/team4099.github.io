@@ -20,7 +20,7 @@
         <div class="container">          
             <h2>{{ page.title }}</h2>
             <br>
-            {% for robot_page in site.robots %}            
+            {% for robot_page in site.robots reversed %}            
                 <div class="row">
                     <div class="col-lg-8">
                         <h3>{{ robot_page.title }}</h3>

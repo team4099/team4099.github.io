@@ -11,11 +11,6 @@
     
         <!-- Custom styles for this template -->
         {% include topImports.html %}
-        <style type="text/css">
-            .robot-image {
-                width: 100%;
-            }
-        </style>
     </head>
     
     <body>
@@ -36,7 +31,7 @@
                     </div>
                     <div class="col-lg-4 d-none d-lg-block">
                         <h3>&nbsp;</h3>
-                        <img class="robot-image" src="{{ robot_page.image_url }}" alt="{{ robot_page.year }} Robot">
+                        <img class="img-fluid" src="{{ robot_page.image_url }}" alt="{{ robot_page.year }} Robot">
                     </div>
                 </div>
             {% endfor %}

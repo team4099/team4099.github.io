@@ -4,114 +4,147 @@ title: Join Now
 permalink: /studentsignup/
 ---
 
-<style type="text/css">
-#wrap {
-   width:100%;
-   margin:0 auto;
-}
-#left_col {
-   float:left;
-   width:45%;
-}
-#right_col {
-   float:right;
-   width:45%;
-}
-</style>
-
 <h2>Join Now!</h2>
-<p>Team 4099 is an open team: anyone can join! If you are interested, fill out the form below. Once you have submitted, you can pay by clicking the paypal button.</p>
+<p>If you are interested in joining Team 4099, fill out the form below!</p>
+<p>
+    The costs associated with taking part in the FIRST Robotics Competition are very high - high enough that even with the help 
+    of our corporate sponsors, we cannot fill our entire budget. For this reason, Team 4099 has calculated that a $115 team fee 
+    is necessary. This money will be used to pay for team registration, tools and equipment, and robot parts. This money will 
+    not be used to pay team members or parents or anything like that. All expenditures by the team will be made public at the 
+    end of the school year, or at the request of any members or parents. 
+</p>
+<p>
+    If this team fee is a burden on you and your family, or you are only tentatively interested in the team, or feel 
+    uncomfortable with paying the fee for any reason, please talk to the team captains during a team meeting or email us at 
+    <a href="mailto:contact@team4099.com">contact@team4099.com</a> and we will figure out an alternative method for you to 
+    contribute to the team. 
+</p>
 <br>
-<h5>Sign Up Form</h5>
+<h3>Sign Up Form</h3>
 
-<form class="ccf-form ccf-theme-default" action="https://getsimpleform.com/messages?form_api_token=b804d32502eae44dfbe00e79c53766f7" method="post" data-form-id="8732">
-    <label>Student Name</label>
-    <div data-field-type="name" data-field-slug="name-1" class="row" id="wrap">
-        <div class="left_col">
-            <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" name="first_name" required>
-        </div>&nbsp;&nbsp;&nbsp;
-        <div class="right_col">
-            <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Last name" name="last_name" required>
+<form id="signupForm" action="https://getsimpleform.com/messages?form_api_token=b804d32502eae44dfbe00e79c53766f7" method="post" data-form-id="8732" novalidate>
+    <br>
+    <h5>Student</h5>
+    <div data-field-type="name" data-field-slug="name-1" class="row">
+        <div class="col-md-4">
+            <label for="studentFirst">Student First Name</label>
+            <input type="text" class="form-control" id="studentFirst" placeholder="First name" name="first_name" required>
         </div>
-
-        <div class="ccf-clear"></div>
-
-    </div>
-    <br>
-    <div data-field-type="name" data-field-slug="name-1" class="row" id="wrap">
-        <div class="left_col">
-            <input type="email" class="form-control is-valid" id="validationServer03" placeholder="me@company.com" name="email" required>
-        </div>&nbsp;&nbsp;&nbsp;
-        <div class="right_col">
-            <input type="phone" class="form-control is-valid" id="validationServer03" placeholder="(123)-456-7980" name="phone" required>
+        <div class="col-md-4">
+            <label for="studentLast">Student Last Name</label>
+            <input type="text" class="form-control" id="studentLast" placeholder="Last name" name="last_name" required>
         </div>
-
-        <div class="ccf-clear"></div>
-
     </div>
     <br>
-    <label>Parent 1</label>
-    <div data-field-type="name" data-field-slug="name-1" class="row" id="wrap">
-        <div class="left_col">
-            <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" name="parent1_first" required>
-        </div>&nbsp;&nbsp;&nbsp;
-        <div class="right_col">
-            <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Last name" name="parent1_last" required>
+    <div data-field-type="name" data-field-slug="name-1" class="row">
+        <div class="col-md-4">
+            <label for="studentEmail">Student Email</label>
+            <input type="email" class="form-control" id="studentEmail" placeholder="me@company.com" name="email" required>
+            <div class="invalid-feedback">
+                Please provide a valid email.
+            </div>
         </div>
-
-    <div class="ccf-clear"></div>
-    
-    </div>
-    <br>
-    <div data-field-type="name" data-field-slug="name-1" class="row" id="wrap">
-        <div class="left_col">
-            <input type="email" class="form-control is-valid" id="validationServer03" placeholder="me@company.com" name="parent1_email" required>
-        </div>&nbsp;&nbsp;&nbsp;
-        <div class="right_col">
-            <input type="phone" class="form-control is-valid" id="validationServer03" placeholder="(123)-456-7980" name="parent1_phone" required>
+        <div class="col-md-4">
+            <label for="studentPhone">Student Phone</label>
+            <input type="phone" class="form-control" id="studentPhone" placeholder="(123)-456-7980" name="phone">
+            <div class="invalid-feedback">
+                Please provide a valid phone number.
+            </div>
         </div>
-
-        <div class="ccf-clear"></div>
-
     </div>
     <br>
-    <label>Parent 2</label>
-    <div data-field-type="name" data-field-slug="name-1" class="row" id="wrap">
-        <div class="left_col">
-            <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" name="parent2_first" required>
-        </div>&nbsp;&nbsp;&nbsp;
-        <div class="right_col">
-            <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Last name" name="parent2_last" required>
+
+    <h5>Parent 1</h5>
+    <div data-field-type="name" data-field-slug="name-1" class="row">
+        <div class="col-md-4">
+            <label for="parent1First">Parent 1 First Name</label>
+            <input type="text" class="form-control" id="parent1First" placeholder="First name" name="parent1_first" required>
         </div>
-
-    <div class="ccf-clear"></div>
+        <div class="col-md-4">
+            <label for="parent1Last">Parent 1 Last Name</label>
+            <input type="text" class="form-control" id="parent1Last" placeholder="Last name" name="parent1_last" required>
+        </div>    
     </div>
     <br>
-    <div data-field-type="name" data-field-slug="name-1" class="row" id="wrap">
-        <div class="left_col">
-            <input type="email" class="form-control is-valid" id="validationServer03" placeholder="me@company.com" name="parent2_email" required>
-        </div>&nbsp;&nbsp;&nbsp;
-        <div class="right_col">
-            <input type="phone" class="form-control is-valid" id="validationServer03" placeholder="(123)-456-7980" name="parent2_phone" required>
+    <div data-field-type="name" data-field-slug="name-1" class="row">
+        <div class="col-md-4">
+            <label for="parent1Email">Parent 1 Email</label>
+            <input type="email" class="form-control" id="parent1Email" placeholder="me@company.com" name="parent1_email" required>
+            <div class="invalid-feedback">
+                Please provide a valid email.
+            </div>
         </div>
-
-        <div class="ccf-clear"></div>
-
+        <div class="col-md-4">
+            <label for="parent1Phone">Parent 1 Phone</label>
+            <input type="phone" class="form-control" id="parent1Phone" placeholder="(123)-456-7980" name="parent1_phone">
+            <div class="invalid-feedback">
+                Please provide a valid phone number.
+            </div>
+        </div>
     </div>
     <br>
-    <div class="form-check form-check-inline">
-        <label class="form-check-label">
-            <input class="form-check-input" type="radio" name="pay" id="inlineRadio1" value="paynow"> Pay now
-        </label>
-    </div>
-    <div class="form-check form-check-inline">
-        <label class="form-check-label">
-            <input class="form-check-input" type="radio" name="pay" id="inlineRadio2" value="paylater"> Pay later (we will contact you to make sure that you complete your registration!)
-        </label>
+
+    <h5>Parent 2</h5>
+    <div data-field-type="name" data-field-slug="name-1" class="row">
+        <div class="col-md-4">
+            <label for="parent2First">Parent 2 First Name</label>
+            <input type="text" class="form-control" id="parent2First" placeholder="First name" name="parent2_first">
+        </div>
+        <div class="col-md-4">
+            <label for="parent2Last">Parent 2 Last Name</label>
+            <input type="text" class="form-control" id="parent2Last" placeholder="Last name" name="parent2_last">
+        </div>
     </div>
     <br>
-    <div class="form-submit">        
-        <button type="submit" class="btn btn-primary">Sign me up!</button>
+    <div data-field-type="name" data-field-slug="name-1" class="row">
+        <div class="col-md-4">
+            <label for="parent2Email">Parent 2 Email</label>
+            <input type="email" class="form-control" id="parent2Email" placeholder="me@company.com" name="parent2_email">
+        </div>
+        <div class="col-md-4">
+            <label for="parent2Phone">Parent 2 Phone</label>
+            <input type="phone" class="form-control" id="parent2Phone" placeholder="(123)-456-7980" name="parent2_phone">
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col">
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="pay" id="inlineRadio1" value="paynow"> Pay now
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="pay" id="inlineRadio2" value="paylater" active> Pay by check
+                </label>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col">
+            <div class="form-submit">
+                <button type="submit" class="btn btn-primary">Sign me up!</button>
+            </div>
+        </div>
     </div>
 
 </form>
+
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+        "use strict";
+        window.addEventListener("load", function() {
+            var form = document.getElementById("signupForm");
+            form.addEventListener("submit", function(event) {
+                if (form.checkValidity() == false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add("was-validated");
+            }, false);
+        }, false);
+    }());
+</script>

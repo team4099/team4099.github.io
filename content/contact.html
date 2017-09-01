@@ -5,36 +5,56 @@ permalink: /contact/
 ---
 
 <h2>Contact us!</h2>
-<p>Feel free to reach out to us with any questions, comments or concerns.</p>
+<p>Feel free to reach out to us with any questions, comments or concerns with this form, or email us at <a href="mailto:contact@team4099.com">contact@team4099.com</a>.</p>
 <br/>
-<form action="https://getsimpleform.com/messages?form_api_token=b804d32502eae44dfbe00e79c53766f7" method="post">
+<form id="contactForm" action="https://getsimpleform.com/messages?form_api_token=b804d32502eae44dfbe00e79c53766f7" method="post" novalidate>
     <div class="row">
         <div class="col-md-6 mb-3">
-            <label>Name</label>
-            <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Bob Stone" required>
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Bob Stone" required>
         </div>
         <div class="col-md-6 mb-3">
-            <label>Team Number (if applicable)</label>
-            <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Team 4099">
+            <label for="team">Team Number (if applicable)</label>
+            <input type="number" class="form-control" id="team" placeholder="4099">
         </div>
     </div>
     <div class="row">
         <div class="col-md-6 mb-3">
-            <label>Email</label>
-            <input type="email" class="form-control is-valid" id="validationServer03" placeholder="me@company.com" required>
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="me@company.com" required>
+            <div class="invalid-feedback">
+                Please provide a valid email address.
+            </div>
         </div>
         <div class="col-md-6 mb-3">
-            <label>Subject</label>
-            <input type="text" class="form-control is-valid" id="validationServer04" placeholder="Something important"
+            <label for="subject">Subject</label>
+            <input type="text" class="form-control" id="subject" placeholder="Something important"
                 required>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12 row-mb-9">
-            <label>Message</label>
+            <label for="comment">Message</label>
             <textarea class="form-control" rows="5" id="comment" placeholder="Start typing here..." required></textarea>
         </div>
     </div>
     <br/>
     <button class="btn btn-primary" type="submit">Submit form</button>
 </form>
+
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+        "use strict";
+        window.addEventListener("load", function() {
+            var form = document.getElementById("contactForm");
+            form.addEventListener("submit", function(event) {
+                if (form.checkValidity() == false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add("was-validated");
+            }, false);
+        }, false);
+    }());
+</script>

@@ -4,4 +4,8 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: robocamps
 permalink: /robocamps
+redirect-from:
+    - /ROBOCAMPS
+    - /Robocamps
+    - /RoboCamps
 ---

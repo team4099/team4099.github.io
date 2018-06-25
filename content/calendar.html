@@ -1,0 +1,193 @@
+---
+layout: page
+title: Calendar
+permalink: /calendar/
+---
+
+<style type="text/css">
+  .fa-check {
+    color: green;
+  }
+
+  .fa-times {
+    color: red;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  body {
+    font-family: Verdana, sans-serif;
+  }
+
+  .month-container {
+    padding: 70px 25px;
+    width: 100%;
+    background: #1abc9c;
+    text-align: center;
+  }
+
+  .month-container ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .month-container ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  .month-container .prev {
+    float: left;
+    padding-top: 10px;
+  }
+
+  .month-container .next {
+    float: right;
+    padding-top: 10px;
+  }
+
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+  }
+
+  .weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+  }
+
+  .days {
+    background: #eee;
+    margin: 0;
+    padding: 10px 0 10px 16px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 5px;
+  }
+
+  .days li {
+    list-style-type: none;
+    text-align: left;
+    font-size: 12px;
+    color: #777;
+  }
+
+  .days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+  }
+
+  /* Add media queries for smaller screens */
+  @media screen and (max-width: 720px) {
+    .weekdays li, .days li {
+      width: 13.1%;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .weekdays li, .days li {
+      width: 12.5%;
+    }
+
+    .days li.active {
+      padding: 2px;
+    }
+  }
+
+  @media screen and (max-width: 290px) {
+    .weekdays li, .days li {
+      width: 12.2%;
+    }
+  }
+</style>
+<script src="https://use.fontawesome.com/7124f2cd3d.js"></script>
+<script>
+  class Calendar {
+    constructor(events) {
+      const now = new Date();
+
+      this.months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+      this.currentMonth = now.getMonth();
+      this.currentYear = now.getFullYear();
+      this.currentDay = now.getDate();
+      this.events = events;
+      this.render();
+    }
+
+    render() {
+      this.spacers = new Date(this.currentYear, this.currentMonth, 1).getDay();
+      this.days = new Date(this.currentYear, this.currentMonth + 1, 0).getDate();
+      $("#month").text(this.months[this.currentMonth]);
+      $("#year").text(this.currentYear);
+
+      let genHTML = ""
+      for (let i = 0; i < this.spacers; i++) {
+        genHTML += "<li class=\"spacer\"></li>";
+      }
+      for (let i = 1; i <= this.days; i++) {
+        genHTML += "<li id=\"" + i + "\">" +
+          (i === this.currentDay ? "<span class=\"active\">" + i + "</span>" : i) +
+          "</li>";
+      }
+
+      $(".days").html(genHTML);
+
+      for (let event in this.events) {
+        event = this.events[event];
+
+        const date = new Date(event.date);
+        if (this.currentYear === date.getFullYear() && this.currentMonth === date.getMonth()) {
+          const dateElement = $("#" + date.getUTCDate())
+          dateElement.html(dateElement.html() + "<br/>" + event.title)
+        }
+      }
+    }
+  }
+
+  let cal;
+
+  fetch("/files/events.json")
+    .then((response) => {
+      return response.json();
+    })
+    .then(data => {
+      cal = new Calendar(data.events);
+    })
+</script>
+<div class="month-container">
+  <ul>
+    <li>
+      <span id="month">August</span><br>
+      <span id="year" style="font-size:18px">2017</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Su</li>
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+</ul>
+
+<ul class="days">
+
+</ul>

@@ -1,0 +1,233 @@
+---
+layout: page
+title: Calendar
+permalink: /calendar/
+---
+
+<style type="text/css">
+  .fa-check {
+    color: green;
+  }
+
+  .fa-times {
+    color: red;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  body {
+    font-family: Verdana, sans-serif;
+  }
+
+  .calendar-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 70px 25px;
+    width: 100%;
+    background: #1abc9c;
+    text-align: center;
+    margin: 0;
+  }
+
+  .calendar-header li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  .calendar-header .prev {
+    float: left;
+    padding-top: 10px;
+  }
+
+  .calendar-header .next {
+    float: right;
+    padding-top: 10px;
+  }
+
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+  }
+
+  .weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+  }
+
+  .days {
+    background: #eee;
+    margin: 0;
+    padding: 10px 0 10px 16px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 5px;
+  }
+
+  .days li {
+    list-style-type: none;
+    text-align: left;
+    font-size: 12px;
+    color: #777;
+  }
+
+  .days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important;
+  }
+
+  .days li p:first-of-type {
+    margin-top: 5px;
+  }
+
+  /* Add media queries for smaller screens */
+  @media screen and (max-width: 720px) {
+    .weekdays li, .days li {
+      width: 13.1%;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .weekdays li, .days li {
+      width: 12.5%;
+    }
+
+    .days li.active {
+      padding: 2px;
+    }
+  }
+
+  @media screen and (max-width: 290px) {
+    .weekdays li, .days li {
+      width: 12.2%;
+    }
+  }
+</style>
+<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+<script>
+  class Calendar {
+    constructor (events) {
+      // Initialize month table
+      this.months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+      // Store date info
+      this.now = new Date();
+      this.currentMonth = this.now.getMonth();
+      this.currentYear = this.now.getFullYear();
+      this.currentDay = this.now.getDate();
+      this.events = events;
+
+      // Render the calendar
+      this.render();
+
+      // Register listeners
+      $(".prev").on("click", this.prevMonth.bind(this));
+      $(".next").on("click", this.nextMonth.bind(this));
+    }
+
+    nextMonth () {
+      this.currentMonth++;
+      if (this.currentMonth === 12) {
+        this.currentMonth = 0;
+        this.currentYear++;
+      }
+      console.log(this.render)
+      this.render();
+    }
+
+    prevMonth () {
+      this.currentMonth--;
+      if (this.currentMonth === 0) {
+        this.currentMonth = 11;
+        this.currentYear--;
+      }
+      this.render();
+    }
+
+    render () {
+      // Find days in the month and spacers needed for correct weekdays
+      this.spacers = new Date(this.currentYear, this.currentMonth, 1).getDay();
+      this.days = new Date(this.currentYear, this.currentMonth + 1, 0).getDate();
+
+      // Show month and year in header
+      $("#month").text(this.months[this.currentMonth]);
+      $("#year").text(this.currentYear);
+
+      // Generate HTML
+      let genHTML = ""
+      for (let i = 0; i < this.spacers; i++) {
+        // Add spacer
+        genHTML += "<li class=\"spacer\"></li>";
+      }
+      for (let i = 1; i <= this.days; i++) {
+        // Add day element
+        genHTML += "<li id=\"" + i + "\">" +
+            // Check for current day
+          (i === this.currentDay && this.currentYear === this.now.getUTCFullYear() &&
+          this.currentMonth === this.now.getUTCMonth() ? "<span class=\"active\">" + i + "</span>" : i) +
+          "</li>";
+      }
+
+      // Add generated HTML to DOM
+      $(".days").html(genHTML);
+
+      // Add events to page
+      for (let event in this.events) {
+        event = this.events[event];
+
+        const date = new Date(event.date);
+
+        // Check if event should be displayed
+        if (this.currentYear === date.getUTCFullYear() && this.currentMonth === date.getUTCMonth()) {
+          // Append event to day element
+          const dateElement = $("#" + date.getUTCDate());
+          dateElement.html(dateElement.html() + "<br/><p>" + event.title + "</p>");
+        }
+      }
+    }
+  }
+
+  let cal;
+
+  // Fetch events.json from server
+  fetch("/files/events.json")
+    .then((response) => {
+      return response.json();
+    })
+    .then(data => {
+      cal = new Calendar(data.events);
+    })
+</script>
+<ul class="calendar-header">
+  <li class="prev"><a href="#" style="color: white; text-decoration: none;"><i class="fas fa-chevron-left"></i></a></li>
+  <li>
+    <span id="month"></span><br>
+    <span id="year" style="font-size:18px"></span>
+  </li>
+  <li class="next"><a href="#" style="color: white; text-decoration: none;"><i class="fas fa-chevron-right"></i></a></li>
+</ul>
+
+<ul class="weekdays">
+  <li>Su</li>
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+</ul>
+
+<ul class="days"></ul>

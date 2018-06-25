@@ -25,31 +25,29 @@ permalink: /calendar/
     font-family: Verdana, sans-serif;
   }
 
-  .month-container {
+  .calendar-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     padding: 70px 25px;
     width: 100%;
     background: #1abc9c;
     text-align: center;
-  }
-
-  .month-container ul {
     margin: 0;
-    padding: 0;
   }
 
-  .month-container ul li {
+  .calendar-header li {
     color: white;
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
   }
 
-  .month-container .prev {
+  .calendar-header .prev {
     float: left;
     padding-top: 10px;
   }
 
-  .month-container .next {
+  .calendar-header .next {
     float: right;
     padding-top: 10px;
   }
@@ -118,25 +116,48 @@ permalink: /calendar/
     }
   }
 </style>
-<script src="https://use.fontawesome.com/7124f2cd3d.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
 <script>
   class Calendar {
-    constructor(events) {
+    constructor (events) {
       // Initialize month table
       this.months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
       // Store date info
-      const now = new Date();
-      this.currentMonth = now.getMonth();
-      this.currentYear = now.getFullYear();
-      this.currentDay = now.getDate();
+      this.now = new Date();
+      this.currentMonth = this.now.getMonth();
+      this.currentYear = this.now.getFullYear();
+      this.currentDay = this.now.getDate();
       this.events = events;
 
       // Render the calendar
       this.render();
+
+      // Register listeners
+      $(".prev").on("click", this.prevMonth.bind(this));
+      $(".next").on("click", this.nextMonth.bind(this));
     }
 
-    render() {
+    nextMonth () {
+      this.currentMonth++;
+      if (this.currentMonth === 12) {
+        this.currentMonth = 0;
+        this.currentYear++;
+      }
+      console.log(this.render)
+      this.render();
+    }
+
+    prevMonth () {
+      this.currentMonth--;
+      if (this.currentMonth === 0) {
+        this.currentMonth = 11;
+        this.currentYear--;
+      }
+      this.render();
+    }
+
+    render () {
       // Find days in the month and spacers needed for correct weekdays
       this.spacers = new Date(this.currentYear, this.currentMonth, 1).getDay();
       this.days = new Date(this.currentYear, this.currentMonth + 1, 0).getDate();
@@ -155,7 +176,8 @@ permalink: /calendar/
         // Add day element
         genHTML += "<li id=\"" + i + "\">" +
             // Check for current day
-          (i === this.currentDay ? "<span class=\"active\">" + i + "</span>" : i) +
+          (i === this.currentDay && this.currentYear === this.now.getUTCFullYear() &&
+          this.currentMonth === this.now.getUTCMonth() ? "<span class=\"active\">" + i + "</span>" : i) +
           "</li>";
       }
 
@@ -169,10 +191,10 @@ permalink: /calendar/
         const date = new Date(event.date);
 
         // Check if event should be displayed
-        if (this.currentYear === date.getFullYear() && this.currentMonth === date.getMonth()) {
+        if (this.currentYear === date.getUTCFullYear() && this.currentMonth === date.getUTCMonth()) {
           // Append event to day element
-          const dateElement = $("#" + date.getUTCDate())
-          dateElement.html(dateElement.html() + "<br/><p>" + event.title + "</p>")
+          const dateElement = $("#" + date.getUTCDate());
+          dateElement.html(dateElement.html() + "<br/><p>" + event.title + "</p>");
         }
       }
     }
@@ -189,14 +211,14 @@ permalink: /calendar/
       cal = new Calendar(data.events);
     })
 </script>
-<div class="month-container">
-  <ul>
-    <li>
-      <span id="month"></span><br>
-      <span id="year" style="font-size:18px"></span>
-    </li>
-  </ul>
-</div>
+<ul class="calendar-header">
+  <li class="prev"><a href="#" style="color: white; text-decoration: none;"><i class="fas fa-chevron-left"></i></a></li>
+  <li>
+    <span id="month"></span><br>
+    <span id="year" style="font-size:18px"></span>
+  </li>
+  <li class="next"><a href="#" style="color: white; text-decoration: none;"><i class="fas fa-chevron-right"></i></a></li>
+</ul>
 
 <ul class="weekdays">
   <li>Su</li>

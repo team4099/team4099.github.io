@@ -88,7 +88,11 @@ permalink: /calendar/
   .days li .active {
     padding: 5px;
     background: #1abc9c;
-    color: white !important
+    color: white !important;
+  }
+
+  .days li p:first-of-type {
+    margin-top: 5px;
   }
 
   /* Add media queries for smaller screens */
@@ -118,42 +122,57 @@ permalink: /calendar/
 <script>
   class Calendar {
     constructor(events) {
-      const now = new Date();
-
+      // Initialize month table
       this.months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
+      // Store date info
+      const now = new Date();
       this.currentMonth = now.getMonth();
       this.currentYear = now.getFullYear();
       this.currentDay = now.getDate();
       this.events = events;
+
+      // Render the calendar
       this.render();
     }
 
     render() {
+      // Find days in the month and spacers needed for correct weekdays
       this.spacers = new Date(this.currentYear, this.currentMonth, 1).getDay();
       this.days = new Date(this.currentYear, this.currentMonth + 1, 0).getDate();
+
+      // Show month and year in header
       $("#month").text(this.months[this.currentMonth]);
       $("#year").text(this.currentYear);
 
+      // Generate HTML
       let genHTML = ""
       for (let i = 0; i < this.spacers; i++) {
+        // Add spacer
         genHTML += "<li class=\"spacer\"></li>";
       }
       for (let i = 1; i <= this.days; i++) {
+        // Add day element
         genHTML += "<li id=\"" + i + "\">" +
+            // Check for current day
           (i === this.currentDay ? "<span class=\"active\">" + i + "</span>" : i) +
           "</li>";
       }
 
+      // Add generated HTML to DOM
       $(".days").html(genHTML);
 
+      // Add events to page
       for (let event in this.events) {
         event = this.events[event];
 
         const date = new Date(event.date);
+
+        // Check if event should be displayed
         if (this.currentYear === date.getFullYear() && this.currentMonth === date.getMonth()) {
+          // Append event to day element
           const dateElement = $("#" + date.getUTCDate())
-          dateElement.html(dateElement.html() + "<br/>" + event.title)
+          dateElement.html(dateElement.html() + "<br/><p>" + event.title + "</p>")
         }
       }
     }
@@ -161,6 +180,7 @@ permalink: /calendar/
 
   let cal;
 
+  // Fetch events.json from server
   fetch("/files/events.json")
     .then((response) => {
       return response.json();
@@ -172,8 +192,8 @@ permalink: /calendar/
 <div class="month-container">
   <ul>
     <li>
-      <span id="month">August</span><br>
-      <span id="year" style="font-size:18px">2017</span>
+      <span id="month"></span><br>
+      <span id="year" style="font-size:18px"></span>
     </li>
   </ul>
 </div>
@@ -188,6 +208,4 @@ permalink: /calendar/
   <li>Sa</li>
 </ul>
 
-<ul class="days">
-
-</ul>
+<ul class="days"></ul>

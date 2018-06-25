@@ -1,0 +1,44 @@
+{
+  "events": [
+    {
+      "title": "Last day of school",
+      "date": "2018-06-15"
+    },
+    {
+      "title": "Rough CAD of robot cart",
+      "date": "2018-06-16"
+    },
+    {
+      "title": "Final CAD of robot cart",
+      "date": "2018-06-23"
+    },
+    {
+      "title": "NAC",
+      "date": "2018-06-24"
+    },
+    {
+      "title": "NAC",
+      "date": "2018-06-25"
+    },
+    {
+      "title": "NAC",
+      "date": "2018-06-26"
+    },
+    {
+      "title": "VEX IQ bots test/Volunteer Meeting",
+      "date": "2018-06-27"
+    },
+    {
+      "title": "VEX IQ bots test/Curriculum",
+      "date": "2018-06-28"
+    },
+    {
+      "title": "Robocamp Training",
+      "date": "2018-06-29"
+    },
+    {
+      "title": "Start robot cart construction",
+      "date": "2018-06-30"
+    }
+  ]
+}

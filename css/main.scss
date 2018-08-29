@@ -15,6 +15,18 @@
   background-color: $team-gold !important;
   border-color: $team-gold !important;
 }
+.btn-outline-team-invert {
+  color: $white !important;
+  background-color: $team-gold !important;
+  border-color: $team-gold !important;
+  background-image: none;
+}
+
+.btn-outline-team-invert:hover {
+  color: $team-gold !important;
+  border-color: $team-gold !important;
+  background-color: transparent;
+}
 
 .diamond-sponsor {
   color: $diamond-sponsor !important;

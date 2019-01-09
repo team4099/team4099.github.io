@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Girl Scout RoboEvent"
+date:   2019-01-05 18:15:21 -040
+categories: [blog, build-season, kickoff]
+author: Elizabeth Attumalil
+---
+
+
+Today was Kickoff! Everyone gathered together and watched the livestream to see what the theme and challenge would be for this year - Destination: Deep Space. In essence, we must be able to put hatch panels and cargo into a cargo ship and a rocket in minutes and 30 seconds. We did a game analysis and went through strategies to figure out the best approach to get the most points in the competition. Tomorrow, there will be a Design meeting to discuss designs for various parts of the robot.

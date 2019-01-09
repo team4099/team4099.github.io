@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Girl Scout RoboEvent"
+title:  "Machine Certificatons!"
 date:   2018-12-08 08:23:42 -040
 categories: [blog, build-season]
 author: Elizabeth Attumalil

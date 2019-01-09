@@ -7,5 +7,5 @@ author: Elizabeth Attumalil
 ---
 
 
-Electrical assisted Programming with the test electronics board and the limelight. They also worked on pneumatics for prototyping the hatch cover outtake and started assembling a second electronics board for prototyping.
+Electrical assisted Programming with the test electronics board and the limelight. They also worked on pneumatics for prototyping the hatch cover outtake and started assembling a second electronics board for prototyping.  
 Programming coded the cargo intake and the hatch panel intake/dispenser, as well as teleop controls. They are nearly done with the controls for the elevator. They started work in the limelight camera but are having trouble opening the control panel for the camera on their computers. The new radio was also connected and determined to be functional.

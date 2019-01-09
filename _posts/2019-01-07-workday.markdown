@@ -7,7 +7,7 @@ author: Elizabeth Attumalil
 ---
 
 
-Design worked on configuring the drivetrain for this year's challenge, since we are increasing to 8 wheels, compared to 6 from last year. Other group members looked at previous year's designs for the mecanum intake and three stage elevators and started designing the respective mechanism for our team.
-Electrical worked on designing a practice electrical board that can be used for further testing. We worked to create a board that encompasses all the electrical parts. We also worked on a pneumatics system and getting the manifolds/solenoids to work properly.
+Design worked on configuring the drivetrain for this year's challenge, since we are increasing to 8 wheels, compared to 6 from last year. Other group members looked at previous year's designs for the mecanum intake and three stage elevators and started designing the respective mechanism for our team.  
+Electrical worked on designing a practice electrical board that can be used for further testing. We worked to create a board that encompasses all the electrical parts. We also worked on a pneumatics system and getting the manifolds/solenoids to work properly.  
 Programming began to work on programming control systems for the elevator, creating preset positions so that the robot can more quickly aim its outtake. Research was also done into how to produce and execute autonomous paths.
 Business worked on assigning parts to the Chairman’s video, as well as starting to work on the grant for Showbest Fixtures. Those assigned to the video took a look at videos from past years to get a feel for what the expectations are for this year. Members assigned to the grant read and discussed the questionnaire, to brainstorm how to approach each question.

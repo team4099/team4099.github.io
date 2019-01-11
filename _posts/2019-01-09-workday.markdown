@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Workday 1/8/19"
+date:   2019-01-09 22:25:16 -040
+categories: [blog, build-season]
+author: Elizabeth Attumalil
+---
+
+
+Electrical worked with mechanical today and helped with building the hatch detaching mechanism. They also worked on pneumatics and trying to get the actuators to push the panel off.  
+Programming continued to code grabber and climber subsystems, as well as the dashboard user interface. They also set up the Limelight for vision.  
+Design worked on finishing the assembly for the drivetrain (adding gearboxes, sprockets, components on the bellypan) and researched designs for the 3 stage elevator and mecanum wheel intake.  
+Business continued to work on the Showbest Fixtures grant and analyzed options for tshirts. Based on certain sponsorships, we might be able to get a better plan.  
+Mechanical began prototyping different subsystems and started testing them against different metrics to optimize the efficiency of each subsystem.

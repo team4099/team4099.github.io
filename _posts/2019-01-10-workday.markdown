@@ -3,7 +3,7 @@ layout: post
 title:  Workday 1/10/19
 date:   2019-01-10 21:13:45 -0500
 categories: [blog, build-season]
-author: <Elizabeth Attumalil>
+author: Elizabeth Attumalil
 ---
 Electrical worked on the testing board. We troubleshooted the pneumatics system and worked with the roborio.  
 Mechanical continued to prototype today. One challenge was figuring out compression and the variability of the size of cargo in the game.  

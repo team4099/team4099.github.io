@@ -1,0 +1,11 @@
+---
+layout: post
+title:  Workday 1/11/19
+date:   2019-01-11 19:45:32 -0400
+categories: [blog, build-season]
+author: Elizabeth Attumalil
+---
+Mechanical continued to prototype subsystems.  
+Programming started working on the superstructure and fixed issues regarding Gradle.  
+Electrical worked on the board and fastened all the components. We also worked on the pneumatics system and RSL.  
+Business finished the Showbest Fixtures grant, now ready to be submitted.

@@ -1,0 +1,11 @@
+---
+layout: post
+title:  1/15/19 Workday
+date:   2019-01-15 18:15:21 -040
+categories: [blog, build-season]
+author: Elizabeth Attumalil
+---
+Mechanical continued prototyping.  
+Programming got stuck on things regarding vision. They figured out how to get over it by taking the time to comprehend what the documentation for limelight was saying... one of our mentors also helped them understand how to do the code for it. One of our team leads reviewed code and everyone who had to fix their code did so. A co-team lead was sick so he "called in" and was working on paths for the new game. They also worked on LEDs and using the Arduino to program them.  
+After submitting the Showbest Fixtures grant on Monday, Business has now started working on the executive summaries for Chairman's. Work continues on for the Chairman's essay and video.  
+Electrical worked on finalizing the testing board. They got all of the pneumatics working and now need to test it with the driver station. They also got a new RSL working.

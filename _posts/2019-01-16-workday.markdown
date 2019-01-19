@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Workday 1/16/19"
-date:   2019-01-19 16:35:01 -040
+date:   2019-01-16 16:35:01 -040
 categories: [blog, build-season]
 author: Elizabeth Attumalil
 ---

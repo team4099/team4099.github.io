@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Workday 1/18/19"
+date:   2019-01-18 16:24:01 -040
+categories: [blog, build-season]
+author: Elizabeth Attumalil
+---
+Programming fixed code to get the pneumatic pistons finished, and helped electrical test the pistons with the hatch panel intake.  
+Mechanical finished climber prototype and gripper (will test both tomorrow), and started testing hatch panel intake (wasn’t successful).  
+Electrical worked on finishing pneumatics and testing the manifolds. They also tested the hatch panel pistons and worked with motors.

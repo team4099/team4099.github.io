@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Workday 1/16/19"
+date:   2019-01-19 16:35:01 -040
+categories: [blog, build-season]
+author: Elizabeth Attumalil
+---
+Design almost finished the mecanum intake (cylinder mounting remaining). They almost finished pocketing the bellypan (need to add mounting holes for compressor and other electronics), and made progress on elevator bearings.  
+Mechanical continued to prototype the climber and hatch panel intake.  
+Programming still working on fixing code. A team member was working on trying to get info from the roborio for the Arduino to make the LEDs have different colors for different actions. A different team member got vision to align the drivetrain with the target, to some extent.  
+Business continued to work on the executive summaries and the video for the Chairman's Award.
+

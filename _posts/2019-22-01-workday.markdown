@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Workday 1/22/19"
+date:   2019-01-22 16:25:01 -040
+categories: [blog, build-season]
+author: Elizabeth Attumalil
+---
+Electrical got the pneumatic manifold working and began working on adding wires to the new competition batteries ordered this year. Also, the electrical board CAD is close to being done, so in the next few days we will be able to begin work on wiring the robots.  
+Mechanical continued prototyping and building gearboxes today. We also continued to make machine parts for drivetrain so we can powdercoat and assemble by the end of this week. Cargo intake successfully went into last year's intake as a proof of concept.  
+Business is still working on executive summaries and the animation for the Chairman’s Award.  
+Programming finished code for LEDs, and continued work on vision.

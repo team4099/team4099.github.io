@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Workday 1/24/19"
+date:   2019-01-24 18:45:32 -040
+categories: [blog, build-season]
+author: Elizabeth Attumalil
+---
+Mechanical worked on another iteration of the cargo intake based on CAD and tested the hatch panel intake at different angles. We also changed the velcro, continued putting pancake cylinders on the gearboxes, and started riveting the practice bot drivetrain together.  
+Electrical wired up the batteries and tried to 3D print a case for the radio while also trying to finish the CAD of the electrical board.  
+Design worked on finishing adjustments of the geometries of the gripper and hatch panel grabber. We’re also working on mounting it all on the full robot assembly.  
+Business continued to work on the video for the Chairman’s Award. We still need to get interviews with our sponsor. 

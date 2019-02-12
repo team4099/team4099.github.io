@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Workday 1/27/19"
+date:   2019-01-27 16:35:01 -040
+categories: [blog]
+author: Elizabeth Attumalil
+---
+Programming worked on developing a procedure for tuning PID values, determining encoder conversions, and worked on communication with the driver dashboard. We also tried to test vision.  
+Electrical worked on the board and made sure CAN worked. We also worked with the new compressor, PDP and  Neos/Spark Maxes.  
+Fabrication worked to finish the intake for the robot by putting the hubs into the rollers and the bearings into the side of the shafts.  
+Business continued to work on executive summaries and the video.

@@ -1,0 +1,12 @@
+---
+layout: post
+title:  Workday 2/5/19
+date:   2019-02-05 19:35:32 -0400
+categories: [blog, build-season]
+author: Elizabeth Attumalil
+---
+Mechanical continued to assemble drivetrain and started assembling cargo and hatch panel intakes. We ran into some clipping issues but worked with the Design team to fix it.  
+Design adjusted the intake geometry and added limit switches to the elevator.  
+Business continued to work on the Chairman’s Award video and essays.  
+Programming got vision assisted aiming to work. We worked on calculating encoder values and using network tables to communicate between the driver dashboard and the robot.
+

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Workday 1/27/19"
-date:   2019-01-27 16:35:01 -040
+title:  "Workday 2/4/19"
+date:   2019-02-04 16:35:01 -040
 categories: [blog]
 author: Elizabeth Attumalil
 ---

@@ -4,7 +4,7 @@ title: About - Programming
 permalink: /about/programming
 ---
 
-## Programming
+# Programming
 
 The programming team is responsible for all software-related tasks the team has. This includes writing a scouting app, inventory software, robot code, and more.
 

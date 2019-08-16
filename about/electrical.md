@@ -4,7 +4,7 @@ title: About - Electrical
 permalink: /about/electrical
 ---
 
-## Electrical
+# Electrical
 
 The Electrical Team is responsible for all of the electrical wiring and pneumatics on the robot. This team works to ensure that all connections are solid throughout a full season, and that no matches will be missed due to a loose wire.
 

@@ -4,7 +4,7 @@ title: About - Business
 permalink: /about/business
 ---
 
-## Business
+# Business
 
 Team 4099's Business Team is the subteam that has the most responsibility assigned to it. This group is responsible for fundraising to meet the team's budget, organizing outreach events, organizing for awards, PR, and social media. For this reason, the Business Team is divided into many different groups who perform each of these tasks.
 

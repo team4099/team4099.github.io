@@ -4,7 +4,7 @@ title: About - Mechanical
 permalink: /about/mechanical
 ---
 
-## Mechanical
+# Mechanical
 
 The Mechanical Team is responsible for prototyping, fabrication, and assembly of any physical part that is needed by Team 4099. This includes prototyping mechanisms during the build season, constructing parts for offseason projects, assembling the final and practice robots, and more. 
 

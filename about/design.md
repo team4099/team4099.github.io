@@ -4,7 +4,7 @@ title: About - Design
 permalink: /about/design
 ---
 
-## Design
+# Design
 
 The Design Team is responsible for conceptualizing the team's robot design for the year. Additionally, the design team works on integrating each subsystem of the robot to make sure that everything works together as expected. Finally, this subteam works on CADing any non-robot parts that the team needs built -- a driver station, pit parts, etc.
 

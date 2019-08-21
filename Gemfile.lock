@@ -224,8 +224,9 @@ DEPENDENCIES
   github-pages
   jekyll-feed (~> 0.6)
   jekyll-redirect-from
+  jekyll-sitemap
   minima (~> 2.0)
   tzinfo-data
 
 BUNDLED WITH
-   1.15.4
+   2.0.2

@@ -3,6 +3,6 @@ layout: post
 title:  <WorkDay>
 date:   2020-01-09 4:01:0 -0500
 categories: blog
-author: <Amruth Nare>
+author: Amruth Nare
 ---
 

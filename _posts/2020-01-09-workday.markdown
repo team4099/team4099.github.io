@@ -5,4 +5,4 @@ date:   2020-01-09 4:01:0 -0500
 categories: blog
 author: Amruth Nare
 ---
-
+Today was our first school workday. The business subteam began writing their executive summaries and outlining a storyboard for the chairman's video. They also worked on the MSDE grant and wrote the newsletter for the week. The design subteam has begun working on each subsystems and geared the drivetrain. The electrical subteam replaced new components on the mule with older components. They also diagnosed issues with the drivetrain's inverted settings.

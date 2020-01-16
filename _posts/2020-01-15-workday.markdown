@@ -6,7 +6,7 @@ categories: blog
 author: Amruth Nare
 ---
 Today programming helped work on the drive train by eliminating any latency from the Motor controllers. They also got the Mule drivetrain to move with a marginal error of 1% when running for a vision target. They also continued working on the superstructure and the LED code. Business contineud working on the MSDE grant and the Chairmans Executive Summaries. Mechanical fully assembled and tested the intake as well as working on the feeder. Design presented the finished subsystems to the rest of the team and made some changes before milling. The following is testing vision code.
-<div style="width:100%;height:480px;background-color:black;text-align:center;">
+<div style="width:75%;height:275;background-color:black;text-align:center;">
   <video style="height:100%;" controls>
     <source src="https://lh3.googleusercontent.com/KRr3aoXJ7xfsUwxqdLhMrvVThPsADyeI4pW2t3-7ud-Up_iz-sXIplgPOhNlFjOyh02_B92iowTOEx8ZIHkkb3o5Y-GogMuARU1MLvWB3oMKkFBkIZRitZmtADKZ1eDcAmw51bkPKw=m18" type="video/mp4">
   </video>

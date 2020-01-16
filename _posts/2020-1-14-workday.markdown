@@ -1,0 +1,8 @@
+---
+layout: post
+title:  <WorkDay>
+date:   2020-01-14 10:29:0 -0500
+categories: blog
+author: Amruth Nare
+---
+Today programming worked on the superstructure code and touched up the LED code. They also worked on getting the vision to align with the target and debugged the drivetrain. Mechanical prototyped the feeder subsystem and figured out how to generate CAM. Electrical added CAN wire connectors to the Spark Maxes and finished the electrical board CAD. Design has completelty completed the finalized drive train and climber for the season. Business continued on the MSDE grant and the Charimans video.

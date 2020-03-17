@@ -1,4 +1,4 @@
-# FRC Team 4099 Website: Amruth Nare Tests
+# FRC Team 4099 Website:
 
 This website is built using [Jekyll](http://jekyllrb.com/), a tool that generates static webpages. This means that you get the performance advantages of a static website, but you get the convenience of using `includes` and `layouts` like PHP. 
 

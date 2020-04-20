@@ -115,6 +115,10 @@ body {
   font-weight: bold;
 }
 
+.lead {
+  text-align: center;
+}
+
 
 /*
  * Footer

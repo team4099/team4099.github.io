@@ -48,16 +48,24 @@ a:hover {
 // navbar stuff
 
 .navbar {
-  
-  font-weight: bold;
-
   @include media-breakpoint-up(lg) {
+    font-weight: bold;
     background-color: transparent !important;
     height: $navbar-logo-height;
     margin-top: $navbar-logo-height;
     border: 0;
   }
-  
+}
+
+.navbar-nav {
+  @include media-breakpoint-up(lg) {
+    float: right;
+  }
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+    text-align: left;
+    float: left;
+  }
 }
 
 .nav-item {

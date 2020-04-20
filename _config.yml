@@ -20,7 +20,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Poolesville HS. We provide an inclusive, student-led environment for students 
   to learn real-world engineering skills.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.team4099.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: team4099
 github_username:  team4099
 instagram_username: team4099

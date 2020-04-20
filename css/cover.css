@@ -109,14 +109,11 @@ body {
 
 .cover {
   padding: 0 1.5rem;
+  text-align: center;
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
   font-weight: bold;
-}
-
-.lead {
-  text-align: center;
 }
 
 

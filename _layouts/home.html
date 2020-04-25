@@ -15,39 +15,46 @@
     <link href="css/cover.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     {% include analytics.html %}
-    <meta name="google-site-verification" content="dCfBdBGX9odX6CjYJ0gxzFrNT9HOr5RVIX00493lf2A" />
+    <meta name="google-site-verification" content="dCfBdBGX9odX6CjYJ0gxzFrNT9HOr5RVIX00493lf2A"/>
 </head>
 
 <body>
-
-    <div class="site-wrapper" id="site-wrapper">
-        <!-- <div class="container"> -->
-            {% include navbar.html fixed-top="fixed-top" %}
-            <!-- <br><br><br><br><br><br><br><br><br> -->
-            <div class="site-wrapper-inner">
-                <div class="cover-container">
-                    <div class="inner cover">
-                        <h1 class="cover-heading">Team 4099</h1>
-                        <p class="lead">
-                            Team 4099 is a <strong><a href="https://www.firstinspires.org/robotics/frc">FIRST</a></strong> robotics team based out of <strong><a href="http://www.montgomeryschoolsmd.org/schools/poolesvillehs/">Poolesville High School</a>.</strong> We provide an <strong>inclusive, student-led environment</strong> for students to learn <strong>real-world engineering skills.</strong>
-                        </p>
-                        <p class="lead">
-                            <a href="/about/" class="btn btn-lg btn-secondary" id="mainButton">About us</a>
-                        </p>
-                    </div>
-
-                    <div class="mastfoot">
-                        <div class="inner">
-                            {% include footerContents.html %}
-                        </div>
-                    </div>
+<div class="site-wrapper" id="site-wrapper">
+    {% include navbar.html fixed-top="fixed-top" %}
+    <div class="site-wrapper-inner">
+        <div class="cover-container">
+            <div class="inner cover">
+                <h1 class="cover-heading">Team 4099</h1>
+                <p class="lead">
+                    Team 4099 is a <strong><a href="https://www.firstinspires.org/robotics/frc">FIRST</a></strong>
+                    robotics team based out of <strong><a
+                        href="http://www.montgomeryschoolsmd.org/schools/poolesvillehs/">Poolesville High
+                    School</a>.</strong> We provide an <strong>inclusive, student-led environment</strong> for students
+                    to learn <strong>real-world engineering skills.</strong>
+                </p>
+                <div class="lead">
+                    <a href="/about/" class="btn btn-lg btn-secondary" id="mainButton">About us</a>
+                </div>
+                <p class="lead">
+                    Want to learn more about FalconCamps?
+                </p>
+                <div class="lead">
+                    <a href="/programs/falconcamps" class="btn btn-lg btn-secondary" id="mainButton">FalconCamps</a>
                 </div>
             </div>
-        <!-- </div> -->
 
-        {% include bottomImports.html %}
-        <img src="/img/Team4099HomePage.jpg" id="highres-robot" style="display: none;">
-        <script src="/js/index.js"></script>
+            <div class="mastfoot">
+                <div class="inner">
+                    {% include footerContents.html %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include bottomImports.html %}
+    <img src="/img/IMG_9674_removed_wrench.png" id="highres-robot" style="display: none;">
+    <script src="/js/index.js"></script>
+</div>
 </body>
 
 </html>

@@ -534,15 +534,16 @@ redirect_from:
             <div class="col">
                 <div class="row text-center">
                     <div class="col levelandDateinfo text-center">
-                        June 22 - June 26
+                        <p>
+                            June 22 - June 26
+                        </p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col paymentLink text-center">
-                        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HA4JRKYH4UV3C"
-                            class="btn btn-lg btn-secondary" id="mainButton">
-                            Sign Up
-                        </a>
+                        <p id="soldOut">
+                            Sold out
+                        </p>
                     </div>
                 </div>
             </div>
@@ -1021,6 +1022,11 @@ redirect_from:
         border-radius: 4px;
         width: 50px;
         height: 80px;
+    }
+
+    #soldOut {
+        font-family: League Spartan;
+        color: #262626
     }
 
     body {

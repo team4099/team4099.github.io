@@ -19,7 +19,6 @@ a:hover {
   border: .05rem solid #fff;
 }
 
-
 /*
  * Base structure
  */
@@ -160,4 +159,11 @@ body {
     width: 42rem;
   }
 }
-
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("/img/Montserrat-Bold.ttf");
+}
+@font-face{
+  font-family: Nunito-Regular;
+  src: url("/img/Nunito-Regular.ttf");
+}

@@ -9,6 +9,16 @@
   background-color: transparent;
   background-image: none;
 }
+.p{
+  font: Nunito-Regular;
+}
+.blockText{
+  width: 100%;
+  font-size: 20px;
+  font-family: NunitoSans-Regular;
+  font-style: normal;
+  word-break: normal;
+}
 
 .btn-outline-team:hover {
   color: $white !important;
@@ -125,4 +135,12 @@ body {
   vertical-align: text-top;
   fill: white;
   fill-rule: evenodd;
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("/img/Montserrat-Bold.ttf");
+}
+@font-face{
+  font-family: NunitoSans-Regular;
+  src: url("/img/NunitoSans-Regular.ttf");
 }

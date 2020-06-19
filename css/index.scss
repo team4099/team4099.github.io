@@ -7,6 +7,9 @@
 body, html {
     height: 100%;
 }
+.p{
+  font: Nunito-Regular;
+}
 
 // Override Bootstrap underlining for anchors
 a:hover {
@@ -116,4 +119,12 @@ a:hover {
   vertical-align: text-top;
   fill: white;
   fill-rule: evenodd;
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("/img/Montserrat-Bold.ttf");
+}
+@font-face{
+  font-family: Nunito-Regular;
+  src: url("/img/Nunito-Regular.ttf");
 }

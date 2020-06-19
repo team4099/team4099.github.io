@@ -230,9 +230,10 @@ title: About - Our Team
     </div>
     <div class="row">
         <div class= "col-1"></div>
-        <div class = "col-sm-11">
+        <div class = "col-sm-10">
             <p class = "blockText" style = "text-align:center;">Team 4099 is very thankful to all of its mentors who help the team in various ways. Mentors provide their knowledge and experience to members of the team. They also provide some of their valuable time to the team to help them in building robots, to creating succesful outreach programs. If you would like to become a mentors, please look at our Support Us Page. Once again, Thanks to all of our mentors for helping us in so many ways!</p>
         </div>
+        <div class= "col-1"></div>
     </div>
             <!-- One Row Per Mentor -->
             <div class = "row">
@@ -255,14 +256,6 @@ title: About - Our Team
 
 
 <style>
-    @font-face {
-        font-family: Nunito-Regular;
-        src: url("/img/Nunito-Regular.ttf");
-    }
-    @font-face{
-        font-family: Montserrat-Bold;
-        src: url("/img/Montserrat-Bold.ttf");
-    }
     .titleTop{
         font-family: Montserrat-Bold;
         font-style: bold;
@@ -273,14 +266,14 @@ title: About - Our Team
     .blockText{
         width: 100%;
         font-size: 20px;
-        font-family: Nunito-Regular;
+        font-family: NunitoSans-Regular;
         font-style: normal;
         word-break: normal;
     }
     .roboText{
         width: 100%;
         font-size: 20px;
-        font-family: Nunito-Regular;
+        font-family: NunitoSans-Regular;
         font-style: normal;
         word-break: normal;
         line-height: 1.5em; 
@@ -288,7 +281,7 @@ title: About - Our Team
     .mentorText{
         width: 100%;
         font-size: 20px;
-        font-family: Nunito-Regular;
+        font-family: NunitoSans-Regular;
         font-style: normal;
         color: #F3F4F4;
         word-break: normal;
@@ -316,13 +309,11 @@ title: About - Our Team
         font-size: 20px;
     }
 
-    /* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+   
     p.accordion:hover {
         color: #F3F4F4;
 
     }
-
-    /* Unicode character for "plus" sign (+) */
     p.accordion:after {
         content: '\2795';
         font-size: 18px;
@@ -332,12 +323,11 @@ title: About - Our Team
         vertical-align: middle;
     }
 
-    /* Unicode character for "minus" sign (-) */
     p.accordion.active:after {
         content: "\2796";
         transition: 0.25s ease-in-out;
     }
-        /* Style the element that is used for the panel class */
+    
     div.panel {
         background-color: #262626;
         color: #F3F4F4;
@@ -363,7 +353,7 @@ title: About - Our Team
     .btn-Custom,
     .btn-Custom:hover,
     .btn-Custom:focus {
-        text-shadow: none; /* Prevent inheritance from `body` */
+        text-shadow: none;
         padding: 5px;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -377,9 +367,6 @@ title: About - Our Team
         border-radius: 15px;
         box-shadow: 0px 0px 1px #000000;
     }
-    
-
-
     
 </style>
 

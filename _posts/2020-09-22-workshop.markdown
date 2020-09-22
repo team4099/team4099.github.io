@@ -8,10 +8,10 @@ author: Eckart Schneider
 Today was the start of week 2 of our workshops. Fabrication & Design worked on learning the basics of CAD and using Onshape. Controls worked on learning how to code motor controllers 
 and making basic subsystem commands. Additionally, we got a surprise visit from one of our graduated members, Andrew Zhong! Going back to the workshop, Newcomers experienced difficulty 
 creating the new class for the subsystem commands, while fixing mistakes in their subsystem object. In the end, most members were able to fix their mistakes and pushed their updates to 
-their own branch [here](https://github.com/team4099/Workshop-2020-09-17). We hope Thursday goes just as well as today and Design / Mech gives a better description of their activities. :blush:
+their own branch [here](https://github.com/team4099/Workshop-2020-09-17). We hope Thursday goes just as well as today and Design gives a better description of their activities. 
 
 Design + Mechanical Workshop:
-![alt text](https://github.com/team4099/team4099.github.io/blob/master/img/blog/9-22-2020/designws.png "Title")
+![alt text](designws.png "Title")
 
 Controls Workshop:
-![alt text](https://github.com/team4099/team4099.github.io/blob/master/img/blog/9-22-2020/controlsws.png "Title")
+![alt text](controlsws.png "Title")

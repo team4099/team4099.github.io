@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Tuesday Workshops Week 2"
-date:   2020-09-22 19:00:00 -0500
+date:   2020-09-22 19:00:00 -0000
 categories: blog
 author: Eckart Schneider
 ---
@@ -11,7 +11,7 @@ creating the new class for the subsystem commands, while fixing mistakes in thei
 their own branch [here](https://github.com/team4099/Workshop-2020-09-17). We hope Thursday goes just as well as today and Design gives a better description of their activities. 
 
 Design + Mechanical Workshop:
-![alt text](designws.png "Title")
+![Design Workshop](/img/blog/9-22-2020/designws.png "Title")
 
 Controls Workshop:
-![alt text](controlsws.png "Title")
+![Controls Workshop](/img/blog/9-22-2020/controlsws.png "Title")

@@ -10,8 +10,8 @@ and making basic subsystem commands. Additionally, we got a surprise visit from 
 creating the new class for the subsystem commands, while fixing mistakes in their subsystem object. In the end, most members were able to fix their mistakes and pushed their updates to 
 their own branch [here](https://github.com/team4099/Workshop-2020-09-17). We hope Thursday goes just as well as today and Design gives a better description of their activities. 
 
-Design + Mechanical Workshop:
-<img src=/img/blog/9-22-2020/designws.png alt="design" width="1100"/>
+Design + Mechanical Workshop: \
+<img src=/img/blog/9-22-2020/designws.png width=650>
 
-Controls Workshop:
-<img src=/img/blog/9-22-2020/controlsws.png alt="controls" width="1100"/>
+Controls Workshop: \
+<img src=/img/blog/9-22-2020/controlsws.png width=650>

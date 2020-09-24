@@ -6,7 +6,7 @@ categories: blog
 author: Eckart Schneider
 ---
 Tuesday was the start of week 2 of our workshops. Fabrication & Design worked on learning the basics of CAD and using Onshape. Controls worked on learning how to code motor controllers 
-and making basic subsystem commands. Additionally, we got a surprise visit from one of our graduated members, Andrew Zhong! Going back to the workshop, newcomers experienced difficulty 
+and making basic subsystem commands. In the workshop, newcomers experienced difficulty 
 creating the new class for the subsystem commands, while fixing mistakes in their subsystem object. In the end, most members were able to fix their mistakes and pushed their updates to 
 their own branch [here](https://github.com/team4099/Workshop-2020-09-17). 
 
@@ -23,7 +23,7 @@ company and our AstraZeneca grant application still needs to be tuned.
 Thursday was the second day of workshops this week. Those who attened the Design workshop learned basic designs for the subsystems related to Infinite Recharge. For 
 example, members learned the different designs for a shooter such as a turret and variable hood. Controls having learned how to create a basic subsystem with commands, 
 were tasked with assigning a command to a button on a controller. For instance, members were tasked with assigning the A button on a controller to make the intake spin 
-inwards. Newcomers had difficulty grasping the concept of assigning a button to a variable and calling that variable to make a command run. 
+inwards. 
 
 Thursday Design + Mechanical Workshop: \
 <img src="/img/blog/2020-09-22/designws2.png" width="650"/>

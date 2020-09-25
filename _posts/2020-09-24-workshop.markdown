@@ -20,7 +20,7 @@ Wednesday was our weekly business sync. The Boy Scouts of America (BSA) curricul
 completed by the next sync. Next, our Chairman's Award script just needs general revisions and needs to be condensed. Each member is currently working on contacting a 
 company and our AstraZeneca grant application still needs to be tuned. 
 
-Thursday was the second day of workshops this week. Those who attened the Design workshop learned basic designs for the subsystems related to Infinite Recharge. For 
+Thursday was the second day of workshops this week. Those who attended the Design workshop learned basic designs for the subsystems related to Infinite Recharge. For 
 example, members learned the different designs for a shooter such as a turret and variable hood. Controls having learned how to create a basic subsystem with commands, 
 were tasked with assigning a command to a button on a controller. For instance, members were tasked with assigning the A button on a controller to make the intake spin 
 inwards. 
@@ -31,4 +31,4 @@ Thursday Design + Mechanical Workshop: \
 Thursday Controls Workshop: \
 <img src="/img/blog/2020-09-22/controlsws2.png" width="650"/>
 
-To end things off, this weekened is our kickoff and we hope we have a great time!
+To end things off, this weekend is our kickoff and we hope we have a great time!

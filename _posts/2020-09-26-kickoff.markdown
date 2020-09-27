@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "2020-2021 Kickoff"
+date:   2020-09-26 19:00:00 -0000
+categories: blog
+author: Eckart Schneider
+---
+Today was kickoff for our team for the 2020-2021 season! An introduction to *Infinite Recharge* and how the game operates was given to newcomers. Later, all other members joined the meet to review the rules and restrictions. Near the end, members individually watched different teams and observed what they did last season. Finally, we devised our goals, needs, wants, and wishes for this season.
+Tomorrow we plan to figure out which subsystems we'll need and start to create a basic layout for the bot. 
+
+Newcomers & Leads: \
+<img src="/img/blog/2020-09-KickoffDay1/kickoff_newcomer.png" width="650"/>  
+
+Everyone: \
+<img src="/img/blog/2020-09-KickoffDay1/kickoff.png" width="650"/>  

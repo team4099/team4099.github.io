@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "2020-2021 Kickoff Part 2"
+date:   2020-09-27 17:00:00 -0000
+categories: blog
+author: Eckart Schneider
+---
+Today was the second part of our kickoff, and we discussed how the subsystems should be made. We did this by splitting off into different groups focused on a subsystem. A problem that arose was a limit on motors as the drivetrain would take 12. After the different groups discussed what we should do, we regrouped and explained our evaluations to the team.
+Now we know an idea of what our robot looks like, subteams can now start working on the bot!
+
+ Discussing Decisions: \
+ <img src="/img/blog/2020-09-KickoffDay2/decision.png" width="650"/>

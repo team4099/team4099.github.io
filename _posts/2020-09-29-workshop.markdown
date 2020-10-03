@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "September Workshops Week 3"
+date:   2020-10-03 12:00:00 -0000
+categories: blog
+author: Eckart Schneider
+---
+Week 3 of workshops started on Tuesday. Design went over utilizing extrude in Onshape as well as using feature scripts to create tubing from prisms and create gussets for tubing. Additionally, they went over assemblies and using different types of mates to attach components. Controls on the other hand went over the basics of PID. The involvement and use of calculus resulted in some confusion, but the leads cleared up confusion.
+
+Tuesday Controls Workshop: \
+<img src="/img/blog/2020-09-29/controlsws.png" width="650"/>
+
+This week's Business Sync had to be done without a meeting due to certain problems, however everything went as normal.
+
+On Thursday Design and Mechanical went over Onshape variables, tips & tricks that make cad more efficient / fast as well as setting up MKCAD so that you can use better parts. Finally, they went over how to do gears in Onshape, as well as belt/chain/pulleys. Controls went over unit types and motion profiles. Members then practiced with motion profiling, PID, and unit types by creating a subsystem that utilizes these. 
+
+Thursday Design + Mechanical Workshop: \
+<img src="/img/blog/2020-09-29/design2.png" width="650"/>
+
+Friday was our notion workshop. Notion is a new way of organizing our documents and discussions our team has adopted this year. Many returning members and newcomers attended to learn how it worked and the purposes of it. 
+
+Notion Workshop: \
+<img src="/img/blog/2020-09-29/notion.png" width="650"/>
+
+On Saturday Strategy shared updates on Tableau, and the scouting data analysis app. They're getting started with off-season strategy training by looking at the 2020 game. Business met today in order to see if anyone needed help with filling out a grant.
+
+Saturday Strategy Workshop: \
+<img src="/img/blog/2020-09-29/strategy.png" width="650"/>
+
+Saturday Business Workshop: \
+<img src="/img/blog/2020-09-29/business.png" width="650"/>

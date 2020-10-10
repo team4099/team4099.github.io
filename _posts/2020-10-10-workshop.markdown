@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "October Workshops Week 1"
+date:   2020-10-10 17:00:00 -0000
+categories: blog
+author: Eckart Schneider
+---
+This month's workshops started on Tuesday. Design went over pneumatics and electronic components that would be used on our robot for this season. Controls went over programming autonomous. First they learned the different types of autonomous commands and then command groups. Next they learned the differences between a path and a trajectory and how to program a trajectory. 
+
+Tuesday Design Workshop: \
+<img src="/img/blog/2020-10-10/october6designws.png" width="650"/>
+
+The Business Sync had members given tips to find new businesses to contact. We are currently working on multiple grants and finishing up some.
+
+Thursday, Design went over a basic physics lesson about kinematics. Controls went over characterization and logging. Near the end of the workshop, we started to set up our repository for this year.  
+
+Thursday Controls Workshop: \
+<img src="/img/blog/2020-10-10/october8controls.png" width="650"/>
+
+On Saturday, Business went over problems they had while filling out grants. Strategy worked on the data ingest tool and played more around with Tableau.   

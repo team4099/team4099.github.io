@@ -17,4 +17,7 @@ Thursday, Design went over a basic physics lesson about kinematics. Controls wen
 Thursday Controls Workshop: \
 <img src="/img/blog/2020-10-10/october8controls.png" width="650"/>
 
-On Saturday, Business went over problems they had while filling out grants. Strategy worked on the data ingest tool and played more around with Tableau.   
+On Saturday, Business went over problems they had while filling out grants. Strategy shared updates on the scouting data analysis app and are getting more people to start working on other aspects of it. They're also continuing with our strategy training with the 2020 game, and shared what they came up with last week. 
+
+Saturday Strategy Workshop: \
+<img src="/img/blog/2020-10-10/october10strategy.png" width="650"/>

@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "October Workshops Week 2"
+date:   2020-10-17 17:00:00 -0000
+categories: blog
+author: Eckart Schneider
+---
+Every subteam this week attended a physics workshop held by our mentors. On Tuesday, we were taught the concept of angular motion and torque. Furthermore, we went over a basic overview of electricity. For example, we learned what voltage, resistance, and current means and how the three relate. On Thursday, we learned how to calculate gear ratios and what it means to choose the right motor. 
+
+Physics Workshop: \
+<img src="/img/blog/2020-10-17/october13physicsws.png" width="650"/>
+
+We only had a workshop for Strategy this weekend as Business would only need to ask for help for filling out grants. Strategy gave updates on progress with our scouting data analysis app and research with it and we went over and discussed strategies we came up with over the last week.

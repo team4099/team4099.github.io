@@ -1,33 +1,33 @@
 ---
 layout: post
-title:  "October Workshops Week 2"
-date:   2020-10-17 17:00:00 -0000
+title:  "October Week 3"
+date:   2020-10-24 17:00:00 -0000
 categories: blog
 author: Eckart Schneider
 ---
 On Tuesday, the team worked on their respective subsystem. Most of the members in the subsystems were in the same group as kickoff and each subsystem group looked at potential ways their respective subsystem would look like.
 
-Climber:
+Climber: \
 <img src="/img/blog/2020-10-24/october20climber.png" width="325"/>
 
-Drivetrain:
+Drivetrain: \
 <img src="/img/blog/2020-10-24/october20drivetrain.png" width="325"/>
 
-Feeder:
+Feeder: \
 <img src="/img/blog/2020-10-24/october20feeder.png" width="325"/>
 
-Intake:
+Intake: \
 <img src="/img/blog/2020-10-24/october20intake.png" width="325"/>
 
-Shooter:
+Shooter: \
 <img src="/img/blog/2020-10-24/october20shooter.png" width="325"/>
 
 On Thursday, the team started the sketch for this year's robot. Everyone attended this meeting. However, we had complications setting up, and we were only able to go over sketching the intake and drivetrain.
 
-Sketch:
+Sketch: \
 <img src="/img/blog/2020-10-24/october22sketch.png" width="600"/>
 
 Saturday Strategy shared progress on research for their scouting data analysis visualizations, and so they're getting started with making some of those graphics. They also shared findings from match videos and discussed the strategies observed used in those videos. Business had their weekly sync and everything went normal.
 
-Strategy:
+Strategy: \
 <img src="/img/blog/2020-10-24/october24strategy.png" width="600"/>

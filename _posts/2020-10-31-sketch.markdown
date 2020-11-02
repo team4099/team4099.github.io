@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "October Week 4"
+date:   2020-10-31 18:00:00 -0000
+categories: blog
+author: Eckart Schneider
+---
+This Tuesday, the entire team started the sketch for the feeder subsystem. We looked at previous examples from last season in order to get a better idea of what our feeder sketch would look like. We had difficulties with starting to meeting and explaining the concept of our feeder. As a result, we only got through the feeder.
+
+Feeder Sketch: \
+<img src="/img/blog/2020-10-24/october27sketch.png" width="600"/>
+
+On Thursday, our team focused on sketching the shooter. The main topics we discussed were the width of the entrance to the shooter for the power cells; the angle of the shooter; and the height of the shooter. Due to us wanting to somewhat perfect the sketch, we spent all of Thursday doing only the shooter.
+
+Shooter Sketch: \
+<img src="/img/blog/2020-10-24/october29sketch.png" width="600"/>
+
+Saturday, Strategy shared updates for the scouting app, and made progress working on some graphics. They finished up discussing match videos from the 2020 game for strategy ideas, and they're getting started analyzing previous seasons.
+
+Strategy: \
+<img src="/img/blog/2020-10-24/october31strategy.png" width="600"/>

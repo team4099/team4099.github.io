@@ -12,9 +12,12 @@ redirect_from:
     <div class="col-lg-12 col-md-12 section">
         <h3 class="sectionHeader text-center">Camps</h3>
         <p>
-            Our two different camps, FalconCamps and RoboCamps, are guarenteed to be a fit for students ages 8+; regardless
-            of prior knowledge. Both camps will actively engage all campers in STEM related activites in an interactive and friendly
-            environment.  Lessons will be taught by experienced members of our team with the comprehensive content 
+            Our two different camps, FalconCamps and RoboCamps, are guarenteed to be a fit for students of all ages 8+;
+            regardless
+            of prior knowledge. Both camps will actively engage all campers in STEM related activites in an interactive
+            and friendly
+            environment.
+            Lessons will be taught by experienced members of our team with the comprehensive content 
             knowledge (mentors, subteam leads, and veteran members).
         </p>
         <p>
@@ -27,7 +30,7 @@ redirect_from:
             teaching the same content that members master over the course of this build season -- let our
             <a href="/about/robots">competition robots</a> speak for themselves.
         </p>
-        
+
     </div>
 </div>
 <div class="row justify-content-center">
@@ -100,11 +103,20 @@ redirect_from:
         <div class="row">
             <div class="col text-center">
                 <h3 class="topicSectionHeader">FalconCamps</h3>
-                <p>test text</p>
+                <p>At FalconCamps, middle and high school students students will learn about mechanical engineering and
+                    programming
+                    in the context of competitive robotics in an interactive and friendly environment.
+                    The camps culminate in a final project which will allow students to show off what they have learned.
+                </p>
 
-                <p>more text</p>
-
-                <p>yay text</p>
+                <p>FalconCamps consist of five online sessions, each two hours long, with a 4:1 camper to counselor
+                    ratio.
+                    Campers will work together on some parts of their projects to foster teamwork and to provide a fun
+                    learning
+                    environment. Lessons will be taught by experienced members of our team with the comprehensive
+                    content knowledge
+                    (mentors, subteam leads, and veteran members).
+                </p>
 
                 <a href="/programs/falconcamps" class="learnMoreButton button1 btn-lg btn-secondary">Learn More</a>
 
@@ -116,12 +128,18 @@ redirect_from:
         <div class="row">
             <div class="col text-center">
                 <h3 class="topicSectionHeader">RoboCamps</h3>
-                <p>test text</p>
+                <p>At RoboCamps, students will learn and develop math, engineering, and computer science skills through
+                    a week-long
+                    robotics experience in which they work to design, build, and program a robot.
+                </p>
 
-                <p>more text</p>
-
-                <p>yay text</p>
-
+                <p>Robocamps will have 4 online sessions for children ages 8-14 (must be of age by the beginning of the
+                    season) that
+                    will be taught by experienced members of Team 4099 as camp counselors. Campers will be allowed to
+                    communicate with each other to create a friendly and fun environment. They will build their
+                    individual
+                    robots to accomplish a specific challenge while competing against other students.
+                </p>
                 <a href="/programs/RoboCamps" class="learnMoreButton button1 btn-lg btn-secondary">Learn More</a>
             </div>
         </div>
@@ -132,12 +150,24 @@ redirect_from:
     p {
         font-size: 20px;
     }
+    .row {
+        margin: -5px;
+    }
+    
+    .nopadding {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    body {
+        background: #F9F9F9;
+    }
 
     .topicSide {
-        background-color: white;
+        background-color: #f9f9f9;
         color: #262626;
         width: 100%;
-        height: 15em;
+        /*height: 15em;*/
         font-family: Glacial Indifference;
     }
 
@@ -202,7 +232,7 @@ redirect_from:
     .button1 {
         background-color: #262626;
         color: #EFAE04;
-        border: 2px solid #262626 ;
+        border: 2px solid #262626;
     }
 
     .button1:hover {
@@ -210,4 +240,60 @@ redirect_from:
         color: #262626;
         border: 2px solid #EFAE04;
     }
+
+    @media (min-width: 992px) {
+        .col-md-border:not(:last-child) {
+            border-right: 7px solid #EFAE04;
+        }
+
+        .col-md-border+.col-md-border {
+            border-left: 7px solid #EFAE04;
+            margin-left: -7px;
+        }
+    }
 </style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+
+
+        var acc = document.getElementsByClassName("accordion");
+        var accPreReq = document.getElementsByClassName("accordionWhite");
+        var panel = document.getElementsByClassName('panel');
+        var panelPreReq = document.getElementsByClassName('panelPreReq');
+
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].onclick = function () {
+                var setClasses = !this.classList.contains('active');
+                setClass(acc, 'active', 'remove');
+                setClass(panel, 'show', 'remove');
+
+                if (setClasses) {
+                    this.classList.toggle("active");
+                    this.nextElementSibling.classList.toggle("show");
+                }
+            }
+        }
+        for (var i = 0; i < accPreReq.length; i++) {
+            accPreReq[i].onclick = function () {
+                var setClasses = !this.classList.contains('active');
+                setClass(accPreReq, 'active', 'remove');
+                setClass(panelPreReq, 'show', 'remove');
+
+                if (setClasses) {
+                    this.classList.toggle("active");
+                    this.nextElementSibling.classList.toggle("show");
+                }
+            }
+        }
+
+
+        function setClass(els, className, fnName) {
+            for (var i = 0; i < els.length; i++) {
+                els[i].classList[fnName](className);
+            }
+        }
+
+    });
+
+</script>

@@ -113,24 +113,22 @@ redirect_from:
             a VEX IQ kit. Campers will learn about block code, sensors, and more to enable their robot to
             complete a challenge. At the end of the week, campers will participate in a virtual competition!
         </p>
-        <ul>
-            <li>Monday: Begin building the base robot!</li>
-            <li>Tuesday: Begin coding, complete coding challenges, and talk about possible strategies for the game.</li>
-            <li>Wednesday: Complete a line-following challenge and discuss sensors to implement into your robot.</li>
-            <li>Thursday: Discuss gear ratios and complete a gear ratio challenge. Finish up working on your robot.</li>
-            <li>Friday: Put your robot to the test by completing autonomous and teleoperated challenges for a specific VEX IQ game!</li>
-        </ul>
+        <p><b>Monday</b>: Begin building the base robot!</p>
+        <p><b>Tuesday</b>: Begin coding, complete coding challenges, and talk about possible strategies for the game.</p>
+        <p><b>Wednesday</b>: Complete a line-following challenge and discuss sensors to implement into your robot.</p>
+        <p><b>Thursday</b>: Discuss gear ratios and complete a gear ratio challenge. Finish up working on your robot.</p>
+        <p><b>Friday</b>: Put your robot to the test by completing autonomous and teleoperated challenges for a specific VEX IQ game!</p>
     </div>
 </div>
 
+<!-- TODO: put images in collapsable panel to take up less space-->
 <div>
-    <div class="topicSide col-sm justify-content-center text-center">
+    <div class="topicSide col-sm justify-content-center">
         <div class="row">
             <div class="col">
-                <h3 class="topicSectionHeader">Week 1: Ringmaster (7/11 - 7/15)</h3>
+                <h3 class="topicSectionHeader" style="text-align: left;">Week 1: Ringmaster (7/11 - 7/15)</h3>
             </div>
         </div>
-        <img class="gameImage center" src="/img/RoboCampsRingmaster1.JPG">
         <div class="row">
             <div class="col">
                 <p>
@@ -138,15 +136,15 @@ redirect_from:
                 </p>
             </div>
         </div>
+        <img class="gameImage center" src="/img/RoboCampsRingmaster1.JPG">
     </div>
     <br>
-    <div class="topicSide col-sm justify-content-center text-center">
+    <div class="topicSide col-sm justify-content-center">
         <div class="row">
             <div class="col">
-                <h3 class="topicSectionHeader">Week 2: Rise Above (7/18 - 7/22)</h3>
+                <h3 class="topicSectionHeader" style="text-align: left;">Week 2: Rise Above (7/18 - 7/22)</h3>
             </div>
         </div>
-        <img class="gameImage center" src="/img/RoboCampsRiseAbove1.png">
         <div class="row">
             <div class="col">
                 <p>
@@ -154,15 +152,15 @@ redirect_from:
                 </p>
             </div>
         </div>
+        <img class="gameImage center" src="/img/RoboCampsRiseAbove1.png">
     </div>
     <br>
-    <div class="topicSide col-sm justify-content-center text-center">
+    <div class="topicSide col-sm justify-content-center">
         <div class="row">
             <div class="col">
-                <h3 class="topicSectionHeader">Week 3: High Rise (7/25 - 7/29)</h3>
+                <h3 class="topicSectionHeader" style="text-align: left;">Week 3: High Rise (7/25 - 7/29)</h3>
             </div>
         </div>
-        <img class="gameImage center" src="/img/RoboCampsHighRise1.png">
         <div class="row">
             <div class="col">
                 <p>
@@ -170,30 +168,31 @@ redirect_from:
                 </p>
             </div>
         </div>
+        <img class="gameImage center" src="/img/RoboCampsHighRise1.png">
     </div>
     <br>
-    <div class="topicSide col-sm justify-content-center text-center">
+    <div class="topicSide col-sm justify-content-center">
         <div class="row">
             <div class="col">
-                <h3 class="topicSectionHeader">Week 4: Squared Away (8/1 - 8/5)</h3>
+                <h3 class="topicSectionHeader" style="text-align: left;">Week 4: Squared Away (8/1 - 8/5)</h3>
             </div>
         </div>
-        <img class="gameImage center" src="/img/RoboCampsSquaredAway1.png">
         <div class="row">
             <div class="col">
                 <p>
                     Attain the highest score by Scoring Balls in or on Cubes, and Scoring Cubes in Corner Goals or on Platforms.
             </div>
         </div>
+        <img class="gameImage center" src="/img/RoboCampsSquaredAway1.png">
     </div>
 </div>
-
-<br>
-
-
 <div class="row justify-content-center mt-5 mb-3">
     <div class="col-lg-12 col-md-12 section">
-        <h3 class="sectionHeader text-center">Register Now!</h3>
+        <div class="row justify-content-center mt-4 mb-3">
+            <button class="col col-md-6" id="signUpTitleCard" onclick="window.open('https:\\/\\/forms.gle/HkQ2D5cikBTzth479', '_blank')">
+                Register
+            </button>
+        </div>
         <div class="row paymentLevelHeader justify-content-center text-center my-2 mt-5">
             <div class="col">
                 Logistics and General Information
@@ -564,6 +563,13 @@ redirect_from:
         font-size: 35px;
     }
 
+    #signUpTitleCard:hover {
+       cursor: pointer;
+       background-color: #EFAE04;
+       color: white;
+       transition: 0.75s;
+   }
+
     .signUpRow {
         justify-content: center;
         align-items: center;
@@ -626,7 +632,9 @@ redirect_from:
     img.gameImage {
         width: 800px;
         height: auto;
-        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         padding-bottom: 16px
     }
 

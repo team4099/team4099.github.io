@@ -256,6 +256,7 @@ GEM
     unf_ext (0.0.7.7)
     unf_ext (0.0.7.7-x64-mingw32)
     unicode-display_width (1.7.0)
+    webrick (1.7.0)
 
 PLATFORMS
   ruby
@@ -267,6 +268,7 @@ DEPENDENCIES
   jekyll-redirect-from
   minima (~> 2.5)
   tzinfo-data
+  webrick (~> 1.7)
 
 BUNDLED WITH
    2.2.16

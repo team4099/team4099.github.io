@@ -150,20 +150,6 @@ permalink: /sponsors/
     .logoTextPadding{
         padding-left: 4em;
     }
-    .flex{
-        display: flex;
-        flex-direction: row;
-        margin-top: 3em;
-    }
-    .imgFlex{
-        display: flex;
-        flex-direction: column;
-        height: 100px;
-    }
-    .txtFlex{
-        display: flex;
-        flex-direction: column;
-    }
     a:hover{
         text-decoration: none;
         color: white;
@@ -179,5 +165,17 @@ permalink: /sponsors/
         padding: .375rem .75rem;
         cursor: pointer;
         border-radius: .25rem;
+    }
+    @media screen and (max-width: 993px){
+        .logoDescription{
+            flex-direction: column;
+            align-items:flex-start;
+        }
+        img{
+            margin-bottom: 1em;
+        }
+        .logoTextPadding{
+            padding: 0;
+        }
     }
 </style>

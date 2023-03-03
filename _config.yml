@@ -43,6 +43,10 @@ defaults:
       path: "img/gallery"
     values:
       gallery: true
+  - scope:
+      path: "img/robocamps"
+    values:
+      robocamps: true
 
 
 collections:

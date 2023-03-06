@@ -40,6 +40,10 @@ defaults:
     values:
       image: true
   - scope:
+      path: "files"
+    values:
+      files: true
+  - scope:
       path: "img/gallery"
     values:
       gallery: true

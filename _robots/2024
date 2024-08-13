@@ -1,0 +1,38 @@
+---
+layout: robots
+
+title: "2024 FRC Season: Crescendo"
+image_url: /img/robots/2023robot.jpg
+year: 2024
+
+competition_name: "Crescendo"
+competition_video: //www.youtube.com/embed/9keeDyFxzY4
+competition_summary: |
+    Gameplay consists of robots scoring foam rings, called Notes, into goals on their end of the field. At the end of the match, the robots move to truss structures called Stages and climb on metal chains to earn additional points.
+competition_summary_url: //https://en.wikipedia.org/wiki/Charged_Up_(FIRST)
+competition_summary_provider: Wikipedia
+
+robot_name: Nightingale
+robot_weight: 125
+robot_width: 28.5
+robot_height: 00.0
+robot_length: 28.5
+quick_facts:
+    - "MK4i swerve modules with a L2 gear ratio, battery placed towards the back of the robot to offset weight in the front"
+    - "Robot width roller with 4” mecanum wheels and compliant wheels in the middle"
+    - "Two-stage continuous elevator powered by two NEOs reaches speeds up to 100 inches/second"
+    - "Lightweight gripper capable of a 10” extension to be able to reach all the nodes and human player stations"
+
+competitions:
+    "CHS District Greater DC Event 1": "Rank 9, Pick 1 of Alliance 1, Won Finals"
+    "CHS District Greater DC Event 2" : "Rank 13, Pick 1 of Alliance 2, Eliminated in Semifinals"
+    "FIRST Chesapeake District Championship": "Rank 23, Pick 1 of Alliance 5, Eliminated in Semifinals"
+    "World Championships Newton Division": "Rank 11, Pick 2 of Alliance 2, Eliminated in Semifinals"
+    
+    
+
+---
+
+During the 2023 FRC season, Team 4099 competed with our robot, Zapdos. We participated in two district events, winning a blue banner in Bethesda, MD, and advancing to the semifinals in Alexandria, VA. These achievements propelled us to the District Championships in Fairfax, VA, where we earned the Innovation in Control and Creativity awards. Additionally, Sarah Yu, a dedicated team member, was honored as a FIRST Dean's List Finalist. Our success continued in Virginia, securing us a spot in the World Championships. For the first time in our team's history, we were the first pick in the playoffs at the World competition. 
+
+    

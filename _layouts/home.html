@@ -33,7 +33,7 @@
                 <div class="lead">
                     <p>
                         <a href="/about/" class="btn btn-lg btn-secondary" id="mainButton">About us</a>
-                    </p> 
+                    </p>
                 </div>
 
                 <p class="lead">
@@ -43,19 +43,71 @@
                     <a href="/programs/camps" class="btn btn-lg btn-secondary" id="mainButton">Camps</a>
                 </div>
             </div>
+        </div>
+    </div>
+    <img src="/img/2025TeamPhoto.jpg" id="highres-robot" style="display: none;">
+</div>
 
-            <div class="mastfoot">
-                <div class="inner">
-                    {% include footerContents.html %}
+<section class="home-section">
+    <div class="container">
+        <h2>Our Team</h2>
+        <blockquote class="blockquote text-center">
+            <p class="mb-0">Team 4099 strives to create an inclusive learning community where students can apply their knowledge of Science, Technology, Engineering, Art, and Math (STEAM) to real-world problems.</p>
+        </blockquote>
+        <hr>
+        <div class="row justify-content-center">
+            <div id="carouselExampleControls" class="carousel slide col-md-8" data-ride="carousel">
+                <div class="carousel-inner">
+                    {% assign image_files = site.static_files | where: "gallery",true %}
+                    {% for image in image_files %}
+                        {% if image.path contains 'img/gallery' %}
+                            {% if forloop.first == true %}
+                                <div class="carousel-item active">
+                            {% else %}
+                                <div class="carousel-item">
+                            {% endif %}
+                                <img class="d-block w-100" src="{{ image.path }}" alt="{{ image.basename }}">
+                            </div>
+                        {% endif %}
+                    {% endfor %}
                 </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
     </div>
+</section>
 
-    {% include bottomImports.html %}
-    <img src="/img/2024TeamPhoto.png" id="highres-robot" style="display: none;">
-    <script src="/js/index.js"></script>
-</div>
+<section class="home-section home-section-alt">
+    <div class="container">
+        <h2>Team Goals</h2>
+        <hr>
+        <p>Team 4099 has four primary goals:</p>
+        <ol>
+            <li>Increasing STEM awareness in our community (Poolesville, and eventually all of Montgomery County),</li>
+            <li>Removing barriers to STEM interest for underrepresented groups,</li>
+            <li>Readying our students for college and the workforce, and</li>
+            <li>Ensuring that our students have fun and make friends while doing so.</li>
+        </ol>
+        <p>Everything that the team does is directly intended to address at least one of these goals, from competing in the FIRST
+            Robotics Competition to hosting team kickball games to starting RoboCamps in Montgomery County.</p>
+    </div>
+</section>
+
+<footer class="footer home-footer">
+    <div class="container">
+        <span class="text-muted">{% include footerContents.html %}</span>
+    </div>
+</footer>
+
+{% include bottomImports.html %}
+<script src="/js/index.js"></script>
 </body>
 
 </html>

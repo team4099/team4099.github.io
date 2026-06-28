@@ -40,7 +40,7 @@ body {
   display: table;
   width: 100%;
   height: 100%; /* For at least Firefox */
-  min-height: 100%;
+  min-height: 100vh; /* Splash fills the first screen; sections below scroll */
   -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
           box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
 }
@@ -159,5 +159,42 @@ body {
   .cover-container {
     width: 42rem;
   }
+}
+
+
+/*
+ * Home content sections (below the splash)
+ */
+
+.home-section {
+  background-color: #fff;
+  color: #333;
+  text-align: left;
+  text-shadow: none;
+  padding: 3rem 0;
+}
+.home-section-alt {
+  background-color: #f9f9f9;
+}
+.home-section a {
+  color: #007bff;
+}
+.home-section a:hover,
+.home-section a:focus {
+  color: #0056b3;
+}
+.home-section .blockquote {
+  text-align: center;
+}
+
+.home-footer {
+  background-color: #1b1f22;
+  color: rgba(255,255,255,.6);
+  text-align: center;
+  text-shadow: none;
+  padding: 1.5rem 0;
+}
+.home-footer a {
+  color: rgba(255,255,255,.8);
 }
 

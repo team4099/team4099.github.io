@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "jekyll",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "export PATH=/opt/homebrew/opt/ruby@3.3/bin:/opt/homebrew/lib/ruby/gems/3.3.0/bin:$PATH && export LANG=en_US.UTF-8 && export LC_ALL=en_US.UTF-8 && bundle exec jekyll serve --livereload --port 4001"],
+      "port": 4001
+    }
+  ]
+}

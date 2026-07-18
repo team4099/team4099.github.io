@@ -1,0 +1,362 @@
+// Camps Pages Styling
+.topicSide {
+    background-color: $bg-card !important;
+    color: $text-primary !important;
+    border: 1px solid $border-color;
+    border-radius: $border-radius-lg;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transition: $transition-smooth;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 2rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+
+    &:hover {
+        transform: translateY(-4px);
+        border-color: rgba(239, 174, 4, 0.25);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35), 0 0 15px rgba(239, 174, 4, 0.1);
+    }
+
+    ul {
+        padding-left: 1.25rem;
+        margin-bottom: 1.5rem;
+        li {
+            color: $text-secondary;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+            &::marker {
+                color: $team-gold;
+            }
+        }
+    }
+
+    p {
+        color: $text-secondary;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+}
+
+// Section Headers
+.sectionHeader {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 2.25rem;
+    color: $team-gold !important;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 15px rgba(239, 174, 4, 0.1);
+}
+
+.topicSectionHeader {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: $team-gold !important;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+#levelHeader {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: $text-primary;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+// Border between columns
+#border {
+    border: none !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    width: 1px !important;
+    margin: 0 2rem;
+    align-self: stretch;
+}
+
+// Buttons
+.learnMoreButton {
+    background-color: transparent !important;
+    color: $team-gold !important;
+    border: 2px solid $team-gold !important;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    border-radius: 30px !important;
+    padding: 0.6rem 2rem !important;
+    transition: $transition-smooth !important;
+    display: inline-block;
+    text-decoration: none !important;
+
+    &:hover {
+        background-color: $team-gold !important;
+        color: $bg-dark !important;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(239, 174, 4, 0.4);
+    }
+}
+
+// Big Register Call to Action Banner
+#signUpTitleCard {
+    display: block;
+    width: auto;
+    max-width: 500px;
+    margin: 2rem auto;
+    background: linear-gradient(135deg, $team-gold 0%, darken($team-gold, 15%) 100%) !important;
+    border: none !important;
+    border-radius: $border-radius-lg !important;
+    color: $bg-dark !important;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding: 1.25rem 3rem !important;
+    font-size: 1.5rem !important;
+    box-shadow: 0 8px 25px rgba(239, 174, 4, 0.3);
+    transition: $transition-smooth !important;
+    cursor: pointer;
+    text-decoration: none !important;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 35px rgba(239, 174, 4, 0.5), $gold-glow;
+        filter: brightness(1.1);
+    }
+}
+
+// Accordion (FAQ & details)
+p.accordion, p.accordionWhite {
+    background-color: rgba(255, 255, 255, 0.03) !important;
+    color: $text-primary !important;
+    border: 1px solid $border-color !important;
+    border-radius: $border-radius-md !important;
+    cursor: pointer;
+    padding: 1rem 1.25rem !important;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: $transition-smooth !important;
+    margin-bottom: 0.5rem !important;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.05rem !important;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover {
+        background-color: rgba(239, 174, 4, 0.05) !important;
+        border-color: rgba(239, 174, 4, 0.3) !important;
+        color: $team-gold !important;
+    }
+
+    &::after {
+        content: '\2795' !important; // Plus sign
+        font-size: 0.85rem;
+        filter: grayscale(1) invert(1);
+        transition: transform 0.3s ease;
+    }
+
+    &.active {
+        border-color: rgba(239, 174, 4, 0.4) !important;
+        background-color: rgba(239, 174, 4, 0.08) !important;
+        color: $team-gold !important;
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+        margin-bottom: 0 !important;
+
+        &::after {
+            content: '\2796' !important; // Minus sign
+        }
+    }
+}
+
+div.panel, div.panelPreReq, div.panelpreReq {
+    padding: 0 1.25rem;
+    background-color: rgba(255, 255, 255, 0.015) !important;
+    color: $text-secondary !important;
+    border: 1px solid $border-color !important;
+    border-top: none !important;
+    border-bottom-left-radius: $border-radius-md;
+    border-bottom-right-radius: $border-radius-md;
+    max-height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    opacity: 0;
+    margin-bottom: 0.75rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+
+    &.show {
+        opacity: 1;
+        max-height: 800px; // Larger max-height to fit rich details
+        padding: 1.25rem !important;
+    }
+
+    ul {
+        padding-left: 1.25rem;
+        margin-bottom: 0;
+        li {
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// Info Tables & Lists
+#paymentInfoSection {
+    background-color: $bg-card;
+    border: 1px solid $border-color;
+    border-radius: $border-radius-lg;
+    padding: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+
+    p {
+        color: $text-secondary;
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+        
+        b {
+            color: $text-primary;
+        }
+
+        a {
+            color: $team-gold;
+            text-decoration: none;
+            transition: $transition-smooth;
+            &:hover {
+                color: lighten($team-gold, 10%);
+                text-decoration: underline;
+            }
+        }
+    }
+
+    ul {
+        padding-left: 1.25rem;
+        margin-bottom: 1.5rem;
+        li {
+            color: $text-secondary;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+            &::marker {
+                color: $team-gold;
+            }
+        }
+    }
+}
+
+// Sign-up Week/Session Cards Grid
+.signUpRow {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid $border-color !important;
+    border-radius: $border-radius-lg;
+    padding: 1.5rem;
+    margin: 1.5rem 0 !important;
+    
+    &#topRow, &#bottomRow {
+        border: 1px solid $border-color !important;
+    }
+}
+
+.signUpCard {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid $border-color;
+    border-radius: $border-radius-md;
+    padding: 1.5rem;
+    margin: 1rem !important;
+    transition: $transition-smooth;
+
+    &:hover {
+        transform: translateY(-2px);
+        border-color: rgba(239, 174, 4, 0.2);
+    }
+
+    .signUpHeader h3 {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 600;
+        font-size: 1.25rem;
+        color: $text-primary;
+        margin-top: 0.75rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .levelandDateinfo {
+        color: $text-secondary;
+        font-size: 0.95rem;
+        margin-bottom: 0;
+
+        p {
+            margin-bottom: 0.25rem;
+        }
+    }
+}
+
+.paymentLevelHeader {
+    font-family: 'Outfit', sans-serif;
+    color: $text-primary !important;
+    font-size: 1.35rem !important;
+    font-weight: 600;
+    
+    b {
+        color: $team-gold;
+    }
+}
+
+// Standard Cards for RoboCamps
+.card {
+    background-color: $bg-card !important;
+    border: 1px solid $border-color !important;
+    border-radius: $border-radius-lg !important;
+    overflow: hidden;
+    transition: $transition-smooth;
+
+    &:hover {
+        transform: translateY(-4px);
+        border-color: rgba(239, 174, 4, 0.25) !important;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    }
+
+    .card-body {
+        padding: 1.5rem;
+        
+        .card-title {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: $text-primary !important;
+            margin-bottom: 0.75rem;
+        }
+
+        .card-text {
+            color: $text-secondary !important;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        ul {
+            padding-left: 1.1rem;
+            margin-top: 0.75rem;
+            margin-bottom: 0;
+            li {
+                color: $text-secondary;
+                font-size: 0.85rem;
+                margin-bottom: 0.25rem;
+                a {
+                    color: $team-gold;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -20,21 +20,21 @@
         <div class="container">          
             <h2>{{ page.title }}</h2>
             <br>
-            {% for robot_page in site.robots reversed %}            
-                <div class="row">
-                    <div class="col-lg-8">
-                        <h3>{{ robot_page.title }}</h3>
-                        <hr>
-                        <p>{{ robot_page.excerpt }}</p>
-                        <a href="{{ robot_page.url }}" class="btn btn-info float-md-right">Read more</a>
-                        
+            <div class="robots-list mt-4">
+                {% for robot_page in site.robots reversed %}            
+                    <div class="row robot-entry-card align-items-center mb-5 p-4">
+                        <div class="col-lg-8 robot-entry-text">
+                            <h3>{{ robot_page.title }}</h3>
+                            <hr>
+                            <p class="mb-4">{{ robot_page.excerpt }}</p>
+                            <a href="{{ robot_page.url }}" class="btn btn-info">Read More →</a>
+                        </div>
+                        <div class="col-lg-4 d-none d-lg-block text-center robot-entry-img-container">
+                            <img class="img-fluid robot-entry-img" src="{{ robot_page.image_url }}" alt="{{ robot_page.year }} Robot">
+                        </div>
                     </div>
-                    <div class="col-lg-4 d-none d-lg-block">
-                        <h3>&nbsp;</h3>
-                        <img class="img-fluid" src="{{ robot_page.image_url }}" alt="{{ robot_page.year }} Robot">
-                    </div>
-                </div>
-            {% endfor %}
+                {% endfor %}
+            </div>
             <br>
         </div>
     

@@ -26,7 +26,6 @@ a:hover {
 
 html,
 body {
-  height: 100%;
   background-color: #333;
 }
 body {
@@ -137,17 +136,12 @@ body {
     position: fixed;
     top: 0;
   }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
   }
   /* Handle the widths */
   .masthead,
-  .mastfoot,
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
@@ -155,7 +149,6 @@ body {
 
 @media (min-width: 62em) {
   .masthead,
-  .mastfoot,
   .cover-container {
     width: 42rem;
   }

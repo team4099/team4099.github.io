@@ -289,52 +289,89 @@ permalink: /sponsors/
 
 
 <style>
-    .logoDescription{
-        display: flex;
-        align-items: center;
-        margin-top: 3em;
-    }
-    .logoDescription img {
-        width: 15em;
-        flex-shrink: 0;
-        object-fit: contain;
-    }
-    .center{
+    .center {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 90%;
+        width: 100%;
+        max-width: 960px;
     }
-    .logoTextPadding{
+    .logoDescription {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        background: #18181c;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        padding: 2rem;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    .logoDescription:hover {
+        transform: translateY(-4px);
+        border-color: rgba(239, 174, 4, 0.25);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    }
+    .logoDescription img {
+        width: 14em;
+        height: auto;
+        flex-shrink: 0;
+        object-fit: contain;
+        filter: drop-shadow(0px 4px 10px rgba(0,0,0,0.3));
+        background: rgba(255, 255, 255, 0.03);
+        padding: 1rem;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.04);
+        transition: all 0.3s ease;
+    }
+    .logoDescription:hover img {
+        background: rgba(255, 255, 255, 0.06);
+    }
+    .logoTextPadding {
         flex: 1;
-        padding-left: 4em;
+        padding-left: 3rem;
     }
-    a:hover{
-        text-decoration: none;
-        color: white;
+    .logoTextPadding p {
+        color: #a1a1aa;
+        font-size: 1.05rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
     }
-    .learnMore{
+    .learnMore {
         background-color: #efae04;
-        border: 1px solid #efae04;
-        color: white;
+        border: none;
+        color: #0f0f11 !important;
+        font-family: 'Outfit', sans-serif;
+        font-weight: 600;
         text-align: center;
-        text-decoration: none;
+        text-decoration: none !important;
         display: inline-block;
-        font-size: 1rem;
-        padding: .375rem .75rem;
+        font-size: 0.95rem;
+        padding: 0.5rem 1.5rem;
         cursor: pointer;
-        border-radius: .25rem;
+        border-radius: 30px;
+        box-shadow: 0 4px 12px rgba(239, 174, 4, 0.3);
+        transition: all 0.3s ease;
     }
-    @media screen and (max-width: 993px){
-        .logoDescription{
+    .learnMore:hover {
+        background-color: #ffc122;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(239, 174, 4, 0.5);
+    }
+    @media screen and (max-width: 991px) {
+        .logoDescription {
             flex-direction: column;
-            align-items:flex-start;
+            align-items: center;
+            text-align: center;
+            padding: 1.5rem;
         }
-        img{
-            margin-bottom: 1em;
+        .logoDescription img {
+            margin-bottom: 1.5rem;
+            width: 12em;
         }
-        .logoTextPadding{
-            padding: 0;
+        .logoTextPadding {
+            padding-left: 0;
         }
     }
 </style>

@@ -9,17 +9,17 @@ redirect_from:
 <h2>Our Robots</h2>
 <hr>
 {% for robot_page in site.robots reversed %}
-    <div class="row">
-        <div class="col-lg-8">
+    <div class="row align-items-center mb-5">
+        <div class="col-12 col-lg-8 mb-3 mb-lg-0">
             <h3>{{ robot_page.title }}</h3>
             <hr>
             <p>{{ robot_page.excerpt }}</p>
-            <a href="{{ robot_page.url }}" class="btn btn-info float-md-right">Read more</a>
+            <a href="{{ robot_page.url }}" class="btn btn-info">Read more</a>
         </div>
-        <div class="col-lg-4 d-none d-lg-block">
-            <h3>&nbsp;</h3>
-            <img class="img-fluid" src="{{ robot_page.image_url }}" alt="{{ robot_page.year }} Robot">
+        <div class="col-12 col-lg-4">
+            <img class="img-fluid rounded" src="{{ robot_page.image_url }}" alt="{{ robot_page.year }} Robot" style="max-height: 250px; width: 100%; object-fit: cover;">
         </div>
     </div>
+    <hr class="my-2">
 {% endfor %}
 <br>

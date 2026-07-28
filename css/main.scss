@@ -267,6 +267,25 @@ body > .container {
             border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
     }
+
+    @media (max-width: 991px) {
+        .navbar-collapse {
+            background: rgba(24, 24, 28, 0.98);
+            padding: 1rem;
+            border-radius: $border-radius-md;
+            margin-top: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        
+        .dropdown-menu {
+            box-shadow: none;
+            border: none;
+            background: transparent;
+            margin-top: 0;
+            padding-left: 1rem;
+        }
+    }
 }
 
 // Carousel Modernization
